@@ -1,0 +1,1029 @@
+/* ===================== Index Page CSS ============================= */
+
+/* ===== Navigation Bar ====== */
+.active{
+    color: #fd5631 !important;
+}
+header{
+	height: 75px;
+}
+header nav.navbar{
+	padding: 13px 0;
+}
+header .navbar-brand img{
+	width: 116px;
+}
+header .navbar-nav .nav-item .nav-link{
+    color: #454056;
+    font-weight: 700;
+    padding: 14px 20px;
+    font-size: 14px;
+    /*transition: 0.3s ease-in-out;*/
+}
+header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-link:active{
+	 color: #fd5631;
+}
+header .navbar-nav .nav-item .dropdown-menu{
+	box-shadow: 0px 5px 10px 0 #dfddddad;
+	border: 1px solid #efefefad;
+    border-radius: 10px;
+    line-height: 25px;
+	display: block;
+    /*opacity: 0;*/
+    visibility: hidden;
+	position: absolute;
+    top: 60px;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+	font-size: 14px;
+    font-weight: 400;
+    color: #454056;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+	color: #fd5631;
+	background-color: transparent;
+}
+header .navbar-nav .nav-item:hover .nav-link{
+	color: #fd5631;
+}
+header .navbar-nav .nav-item:hover .dropdown-menu{
+	/*opacity: 1;*/
+    visibility: visible;
+	top: 50px;
+    transition: 0.3s ease-in-out;
+}
+header .navbar-nav .nav-item .dropdown-menu .nested-dropdown-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navbar-nav .nav-item .dropdown-menu .nested-dropdown .dropdown-menu{
+    left: 152px;
+    top: 32px;
+    opacity: 0; 
+    visibility: hidden;
+}
+header .navbar-nav .nav-item .dropdown-menu .nested-dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-in-button a{
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 26px;
+}
+.sign-in-button a:hover{
+    color: #fd5631;
+}
+.navbar-toggler-icon{
+  width: unset;
+  height: unset;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.scrollShadow{
+   box-shadow: 0 0.125rem 0.125rem -0.125rem rgb(31 27 45 / 8%), 0 0.25rem 0.75rem rgb(31 27 45 / 8%)!important;
+}
+
+/* Account page navbar */
+header .nav-img-logo:after{
+    display: none;
+}
+
+/* ======= Banner Section ====== */
+/*.banner-section::after{
+    background-color: red;
+}*/
+.banner-section::before{
+   background-color: rgba(0, 0, 33, 0.4);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.banner-section{
+    background: url(../images/hero-image-2.jpg) no-repeat center center;
+    position: relative;
+    background-size: cover;
+    min-height: 400px;
+    margin: 0.5rem 0.75rem;
+    border-radius: 12px;
+}
+.banner-section .banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ======= Property Categories ====== */
+.property-box{
+	border: 1px solid #efefefad;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px 0 #dfddddad;
+    border-radius: 10px;
+    padding: 20px;
+    height: 130px;
+    cursor: pointer;
+}
+.property-box i{
+	color: #ff0000b3;
+    font-size: 17px;
+    width: 45px;
+    background-color: #ffd8d859;
+    height: 45px;
+    border-radius: 50%;
+    display: block;
+    padding: 14px 0px;
+    margin: auto;
+    margin-bottom: 15px;
+	transition: 0.3s ease-in-out;
+}
+.property-box i.fa-ellipsis{
+    font-size: 22px;
+}
+.property-box h6{
+	color: #454056;
+	margin: 0;
+}
+.property-box:hover i{
+	color: white;
+	background-color: #fd5631;
+}
+#more-property-dropdown {
+    padding: 10px 0;
+    position: absolute;
+    top: 140px;
+    z-index: 2;
+    right: 9px;
+    width: 80%; 
+    min-width: 100px;
+}
+#more-property-dropdown img{
+    width: 20px;
+    margin-right: 4px;
+}
+#more-property-dropdown .nav-link{
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4px 16px;
+}
+.more-property-display{
+    display: none;
+}
+
+/* ===== Services Section ====== */
+.service-slider .card{
+    padding: 20px 40px 30px;
+    box-shadow: unset;
+}
+.service-slider .card:hover{
+    box-shadow: 0px 5px 10px 0 #dfddddad!important;
+}
+/* === Card === */
+.card{
+    /*margin: 4px 0;*/
+    border-radius: 10px;
+	border: none;
+    box-shadow: 0px 3px 10px 0 #dfddddad;
+}
+.card img{
+        border-radius: 10px 10px 0 0;
+}
+.card .card-body p{
+    color: #666276;
+}
+.card .card-body h5{
+    font-size: 14px;
+    font-weight: 400!important;
+}
+.card .card-body .h6{
+        color: #000000bd;
+}
+.card .card-body span{
+     color: #000000bd;
+     font-weight: 700!important;
+}
+.card .card-footer{
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.card .card-footer span{
+        margin: 0 20px;
+        margin: 8px;
+    display: inline-block;
+}
+.card .card-footer span img{
+    display: inline;
+}
+.card .card-hover-icon{
+        height: 30px;
+    width: 30px;
+    background: white;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out!important;
+}
+.card hr{
+        margin: 0 auto;
+    width: 90%;
+    color: #0000005e;
+}
+.card .card-body:hover .h6{
+        color: #fd5631;
+    transition: 0.3s ease-in-out!important;
+}
+.card:hover{
+    box-shadow: 0 0.125rem 0.5rem -0.25rem rgb(31 27 45 / 12%), 0 0.25rem 1rem rgb(31 27 45 / 12%) !important;
+}
+.card:hover img{
+    filter: brightness(0.85);
+}
+.card:hover .card-hover-icon{
+    opacity: 1;
+}
+/* Card dots */
+.slick-dots{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-dots li{
+    margin: 15px;
+    margin-top: -15px;
+    font-size: 25px;
+}
+.slick-dots button{
+    display: none;
+}
+.slick-slide {
+    margin: 14px 12px;
+}
+/* Card button */
+.slick-next, .slick-prev{
+    height: 6px;
+    color: #666276;
+    overflow: hidden;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 48.6%;
+    transform: translateX(-50%);
+}
+.slick-prev{
+    width: 20px;
+    background-color: #66627666;
+}
+.slick-next{
+    margin-left: 35px;
+    width: 35px;
+    background-color: #666276;
+}
+
+/* ====== Offers Section ===== */
+/* === View text === */
+.view-text{
+    min-width: 84px;
+    display: flex;
+    justify-content: end;
+}
+.view-text a{
+    color: #666276;
+}
+.view-text a:hover{
+    color: #fd5631;
+}
+.view-text i{
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+/* ====== Recently Added Section ===== */
+.nav-tabs {
+    border: none;
+}
+.nav-tabs .nav-link{
+    background-color: #f5f4f8;
+    color: #454056;
+    border-radius: 8px;
+    margin-left: 1rem;
+    font-size: 14px;
+    border: none;
+}
+.nav-tabs .nav-link.active{
+    box-shadow: 0 0.125rem 0.125rem -0.125rem rgb(31 27 45 / 8%), 0 0.25rem 0.75rem rgb(31 27 45 / 8%);
+    color: #fd5631!important;
+}
+.nav-tabs .nav-link:hover{
+    box-shadow: 0 0.125rem 0.125rem -0.125rem rgb(31 27 45 / 8%), 0 0.25rem 0.75rem rgb(31 27 45 / 8%);
+    color: #1f1b2d;
+}
+.bg-1, .bg-2, .bg-3{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    }
+.bg-1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../images/bg-1.jpg);
+}
+.bg-2{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../images/bg-2.jpg);
+}
+.bg-3{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../images/bg-3.jpg);
+}
+/* content-box */
+.content-box{
+    min-height: 250px;
+        border-radius: 12px;
+}
+.content-box-body{
+        display: flex;
+    justify-content: space-between;
+        align-items: end;
+    padding: 10px 15px;
+    width: 100%;
+}
+.content-box-body h5, .content-box-body h2, .content-box-body p{
+    color: #fff;
+}
+.content-box-body h5{
+        font-size: 14px;
+    font-weight: 400!important;
+}
+
+/* ====== Cities Section (crosual) ====== */
+.cities .card .card-body:hover .h6 {
+    color: #000000bd;
+}
+.progress{
+    border-radius: 7px;
+    background-color: #e9ecef87;
+    width: 100%;
+}
+.cities-progress-bar{
+    width: 100%;
+    top: 10%;
+    opacity: 0;
+}
+.cities .card:hover img{
+    filter: brightness(0.55);
+}
+.cities .card:hover .cities-progress-bar{
+    opacity: 1;
+}
+
+/* ====== Footer Section ===== */
+footer .nav-link{
+    color: rgb(102, 98, 118);
+    padding: 4px 0px;
+}
+footer .nav-link:hover{
+    color: #fd5631;
+}
+.footer-icon i{
+        font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: rgb(102, 98, 118);
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px 0;
+    margin-right: 6px;
+}
+.footer-icon i:hover{
+    color: #fff;
+    background-color: #fd5631;
+}
+footer .footer-right-col img{
+    border-radius: 13px;
+}
+footer .footer-right-col .h6 a{
+    color: #000000bd;
+}
+footer .footer-right-col .h6 a:hover{
+    color: #fd5631;
+}
+footer .footer-right-col span a{
+    color: #666276;
+}
+footer .footer-right-col span a:hover{
+    color: #000000bd;
+}
+footer .app-store{
+    background: rgba(69, 64, 86, 0.765);
+    border-radius: 8px;
+    padding: 2px 12px;
+        height: 48px;
+    min-width: 142px;
+}
+footer .app-store i{
+    font-size: 32px;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 0;
+}
+footer .app-store h6{
+        margin: 0;
+    font-size: 10px;
+    font-weight: 400!important;
+}
+footer .app-store h2{
+    font-weight: 400!important;
+    margin: 0;
+    font-size: 17px;
+}
+footer .footer-row-2{
+    border-radius: 10px;
+    padding: 0 30px;
+}
+footer .footer-row-2 img{
+        width: 210px;
+    margin-top: -40px;
+}
+
+/* ======= Scroll back to Top ======= */
+#scrollUp{
+    z-index: 500;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    text-align: center;
+    display: none!important;
+}
+#scrollUp a{
+    min-width: 40px;
+    min-height: 40px;
+    background-color: rgba(31,27,45,.25);
+    border-radius: 50%;
+    line-height: 2.5rem;
+    opacity: 0.5;
+    display: block;
+}
+#scrollUp a:hover{
+    opacity: 1;
+}
+#scrollUp span{
+    display: none;
+}
+#scrollUp:hover span{
+    display: block;
+}
+#scrollUp.scrollActive{
+    display: flex!important;
+}
+
+
+/* ===================== Property_for_rent Page CSS ============================= */
+
+/* ======= Property for rent Left Column ===== */
+.property_container .property-left-col{
+        padding: 30px 22px;
+    border: solid #efefefad;
+    border-width: 1px 1px 0 0;
+    box-shadow: 0px 5px 10px 0 #dfddddad;
+}
+.rent_sale_btn a{
+        border: none;
+    font-weight: 400!important;
+    padding: 10px 12px;
+}
+.rent_sale_btn a:first-child{
+    box-shadow: 0px 5px 10px 0 #dfddddad;
+}
+.rent_sale_btn a:first-child{
+    color: #fd5631;
+    background-color: #fff;
+}
+.rent_sale_btn a:last-child{
+    background-color: rgb(245, 244, 248);
+    color: #454056;
+}
+.rent_sale_btn a:last-child:hover{
+    box-shadow: 0px 5px 10px 0 #dfddddad;
+}
+.form-select, .form-input, textarea, .form-control {
+    border-radius: 8px;
+    padding: 9px 15px;
+}  
+.form-select:focus, .form-input:focus, textarea:focus, .form-control:focus {
+    border-color: rgb(255 198 185);
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgb(255 198 185);
+}
+.form-check-input:focus {
+     box-shadow: unset; 
+}
+.bed_bath_col label{
+    font-size: 14px;
+}
+.beds-baths .nav{
+    width: fit-content;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+.beds-baths .nav .nav-item .nav-link{
+    color: #666276;
+}
+.beds-baths .nav .nav-item{
+    border-right: 1px solid #ced4da;
+} 
+.beds-baths .nav .nav-item:hover{
+    background-color: #f5f4f8;
+}   
+.beds-baths .nav .nav-item:last-child{
+    border: none;
+}
+
+/* ======= Property for rent Right Column ===== */
+.breadcrumb .nav .nav-item .nav-link{
+    display: inline-block;
+    font-size: 14px;
+    color: #666276;
+}
+.breadcrumb .nav .nav-item:first-child .nav-link{
+    padding-left: 0;
+}
+.breadcrumb .nav .nav-item .nav-link:hover{
+    color: #454056;
+}
+.breadcrumb .nav .nav-item:last-child .nav-link{
+    color: #fd5631;
+}
+.breadcrumb .nav .nav-item:last-child .nav-link:hover{
+    color: #fd5631;
+}
+.breadcrumb .nav .nav-item:before{
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: #666276;
+}
+.breadcrumb .nav .nav-item:first-child:before{
+    content: "";
+}
+
+/* Heading row */
+#map_view a{
+    color: #fd5631;
+}
+#map_view a:hover{
+    color: #f5441d;
+}
+
+/* Pagination */
+.pagination .page-link{
+    color: #111111b8;
+    font-weight: 500;
+    border: none;
+    margin-right: 3px;
+    padding: 3px 10px;
+    background: transparent;
+}
+.pagination .page-link:focus{
+    box-shadow: none;
+}
+.pagination .pagination-active{
+    color: #fff;
+    background: red;
+    font-weight: 700;
+    border-radius: 50% !important;
+}
+
+/* Price range */
+.property_container .price-filter-range{
+    width: 94%;
+    margin: auto;
+    border: none;
+    background: #e2e0e7;
+    height: 5px;
+}
+.property_container .ui-slider-handle{
+    border: 4px solid #fd5631;
+    background: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+.property_container .ui-slider-handle:focus{
+    outline: none;
+}
+.property_container .ui-widget-header {
+    background: #fd5631;
+}
+
+/* Filters */
+#filters{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 111;
+    display: none;
+}
+#filters button{
+    color: #fff;
+    background-color: #fd5631;
+    text-align: center;
+    padding: 8px;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+}
+/* Offcanvas */
+.offcanvas{
+    visibility: visible;
+    position: static;
+    transform: translateX(0%);
+    border: none;
+}
+
+
+/* ===================== Single Property V.1 Page CSS ============================= */
+.single-property-content .amenities i, .single_property-2 .amenities i{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+.single-property-content .modal-content{
+    padding: 30px;
+    border-radius: 16px;
+}
+.single-property-content .modal-content .modal-header{
+    border: none;
+    flex-direction: column;
+}
+.single-property-content .modal-content .modal-header h5{
+    font-size: 28px;
+    order: 2;
+    margin-top: 12px;
+}
+.single-property-content .modal-content .modal-header button{
+    font-size: 14px;
+    margin-top: -34px;
+    margin-right: -34px;
+}
+.single-property-content .btn-2:hover{
+    background-color: #fd5631 !important;
+}
+
+
+/* ===================== Single Property V.2 Page CSS ============================= */
+.single_property-2 .slider-card{
+    position: relative;
+}
+.single_property-2 .slider-card img{
+    border-radius: 12px;
+}
+.single_property-2 .slider-card .slider-card-body{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+.single_property-2 .rental-agent .row{
+    border: 1px solid #efecf3 !important;
+    border-radius: 12px;
+}
+.single_property-2 .rental-agent .row img{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.single_property-2 .blockquote{
+    position: absolute;
+    right: 20px;
+    top: -23px;
+}
+.blockquote i{
+    font-size: 50px;
+    color: #fd5631;
+}
+
+
+/* =========================== Personal Info Page CSS ======================== */
+.account-active{
+    color: #fd5631!important;
+    border-left: 2px solid #fd5631!important;
+    margin-left: -1rem!important;
+    padding-left: 1rem!important;
+    cursor: default;
+}
+.personal-info .btn{
+    padding: 12px 15px;
+}    
+.personal-info .progress{
+    height: 4px;
+}
+.social-col i, .card-icon i{
+    font-size: 16px;
+    min-width: 30px;
+    min-height: 30px;
+    background-color: #fff;
+    color: rgb(102, 98, 118);
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px 0;
+    box-shadow: 0 2px 4px 0 rgb(219 219 219);
+}
+.card-icon i:hover{
+    color: #fff;
+    background-color: #fd5631;
+}
+.personal-info .navbar-toggler{
+    width: 100%;
+        color: #1f1b2d;
+    background-color: #f5f4f8;
+    border-color: #d5d2dc !important;
+    padding: 8px 0;
+}
+.personal-info .card img {
+    border-radius: 10px 0 0 10px;
+}
+.personal-info .card .card-footer span{
+    color: #454056 !important;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.text-underline:hover{
+    text-decoration: none;
+}
+.personal-info .personal-details .btn{
+    background-color: transparent;
+    color: #111;
+    font-size: 16px;
+    border: none;
+    margin-right: -12px;
+}
+.personal-info .personal-details .btn:hover{
+    box-shadow: none;
+    color: #fd5631;
+} 
+.change-picture-label{
+    width: 100%;
+    background: #f5f4f8;
+    height: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px dotted #ced4da;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.change-picture-label img{
+    width: 30px;
+    margin-bottom: 8px;
+}
+#change-picture{
+    display: none;
+    z-index: -1;
+}
+
+/* =========================== Sign In Page ================================== */
+.sign-in-page .row, .sign-up-page .row{
+    width: 85%;
+}
+
+/* =========================== Vender - Add Property Page CSS ======================== */
+.alert-info{
+    color: #3c76f2;
+    background-color: #ecf1fe;
+    border: 1px solid #bbcffa;
+    border-radius: 6px;
+}
+.alert-file{
+    border: 1px dashed #ced4da;
+    border-radius: 12px;
+}
+.add-property aside > div{
+    position: sticky;
+    top: 0;
+    z-index: 111;
+}
+.add-property .progress{
+    height: 4px;
+}
+.change-video-label{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.change-video-label a{
+    padding: 9px 20px;
+    font-size: 16px;
+}
+#change-video{
+    display: none;
+    z-index: -1;
+}
+
+/* ========================= Vendor - Property promotion =========================== */
+.property-promotion-plan .card .card-body h5{
+    font-weight: 700!important;
+}
+.property-promotion-plan .card .card-body span{
+    font-weight: 400!important;
+}
+.property-promotion-plan .card .card-body ul{
+    max-width: 16rem;
+    margin: 1rem auto!important;
+}
+.property-promotion-plan .card{
+    box-shadow: 0 0.125rem 0.5rem -0.25rem rgb(31 27 45 / 12%), 0 0.25rem 1rem rgb(31 27 45 / 12%) !important;
+}
+.property-promotion-plan .card:hover img{
+    filter: unset;
+}
+.property-promotion-plan .card .btn{
+    padding: 10px 20px;
+}
+.property-promotion-plan .card hr{
+    width: 100%;
+}
+.property-promotion-services .card{
+    box-shadow: unset;
+}
+.property-promotion-services .card:hover{
+    box-shadow: 0 0.125rem 0.125rem -0.125rem rgb(31 27 45 / 8%), 0 0.25rem 0.75rem rgb(31 27 45 / 8%) !important;
+}
+
+
+/* ========================= Vendor - Page properties =========================== */
+.vendor-page-properties .rent_sale_btn a {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+
+/* ================================== About Page CSS ============================= */
+.number-icon{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    background: red;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding: 4px 0;
+    font-size: 16px;
+    box-shadow: 0 3px 10px 0 rgb(255 1 1 / 28%);
+}
+.about-slider .card:hover{
+    box-shadow: 0px 3px 10px 0 #dfddddad !important;
+}
+.about-slider .card:hover img {
+    filter: unset;
+}
+.customers-slider .blockquote {
+    position: absolute;
+    right: 20px;
+    top: -23px;
+}
+
+/* ================================== Blog page CSS ============================= */
+.blog-articles .card, .blog-articles .card:hover{
+    box-shadow: none !important;
+}
+.blog-articles .card img{
+    filter: unset !important;
+    border-radius: 10px;
+}
+.real-estate-slider h4:hover{
+    color: #fd5631;
+}
+
+
+/* ================================== Single Blog page CSS ============================= */
+.single-post-comment .replyed-comment{
+    border-left: 4px solid #efecf3;
+    margin-left: 24px;
+    padding-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.single-post-comment .replyed-comment .author{
+    background-color: #3c76f2;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 8px;
+    margin-left: 4px;
+}
+
+
+/* ================================== Contact Page CSS ============================= */
+.contacts-page .card {
+    box-shadow: unset;
+}
+.contacts-page .card .card-body i{
+    font-size: 22px;
+    min-width: 45px;
+    min-height: 45px;
+    color: #fd5631;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 2px 4px 0 rgb(219 219 219);
+    transition: 0.3s;
+}
+.contacts-page .card:hover .card-body i{
+    color: #fff;
+    background-color: #fd5631;
+}
+.contacts-page .card .card-body h5{
+    font-weight: 700 !important;
+    font-size: 22px !important;
+}
+
+
+/* ================================== Help center CSS ============================= */
+.help-center .search-box input{
+    width: 100%;
+    border: none;
+}
+.help-center .search-box input:focus, .help-center .search-box input:hover{
+    outline: none;
+    border: none;
+}
+.help-center .search-box a{
+    min-width: 140px;
+    padding: 14px 22px;
+}
+.tags h5{
+    min-width: fit-content;
+}
+.tags a{
+    border: 1px solid #d5d2dc;
+    border-radius: 25px;
+    padding: 6px 14px;
+    font-size: 12px;
+    margin-right: 6px;
+    min-width: fit-content;
+}
+.tags a:hover{
+    background-color: #f5f4f8;
+    color: #000000bd;
+}
+.help-center .help-sec-row .nav .nav-item{
+    margin-bottom: 1.2rem;
+    width: 220px;
+    text-align: center;
+}
+.help-center .help-sec-row .nav .nav-item .nav-link{
+    font-size: 16px;
+    padding: 10px 16px;
+}
+
+
+/* ================================== Page not found CSS ============================= */
+.not-found-left{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+.not-found-left .btn-5{
+    padding: 12px 24px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+.not-found-left .btn-5:hover{
+    color: #fd5631;
+    background-color: #fff;
+}
+.not-found-right img{
+    border-radius: 30px;
+}

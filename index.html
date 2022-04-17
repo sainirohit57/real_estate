@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font-awesome Icons -->
+	<link rel="stylesheet" href="./fontawesome-free/css/all.css">
+
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<title>Real Estate</title>
+
+</head>
+<body>
+
+<main>
+	<!-- ======= Navigation Bar ====== -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="./images/logo-dark.svg" class="img-fluid">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon mx-3"><i class="fa-solid fa-bars-staggered"></i></span>
+		      <a href="add_property.html" class="btn" type="submit">Add</a>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+		      	<li class="nav-item">
+		          <a class="nav-link active" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Catalog
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="property_for_rent.html">Property for Rent</a></li>
+		            <li><a class="dropdown-item" href="property_for_sale.html">Property for Sale</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.1.html">Single Property v.1</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.2.html">Single Property v.2</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Account
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="personal_info.html">Personal Info</a></li>
+		            <li><a class="dropdown-item" href="password_and_security.html">Password & Security</a></li>
+		            <li><a class="dropdown-item" href="my_properties.html">My Properties</a></li>
+		            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+		            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+		            <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+		            <li><a class="dropdown-item" href="sign_in.html">Sign In</a></li>
+		            <li><a class="dropdown-item" href="sign_up.html">Sign Up</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Vendor
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="add_property.html">Add Property</a></li>
+		            <li><a class="dropdown-item" href="property_promotion.html">Property Promotion</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_properties.html">Vendor Page: Properties</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_reviews.html">Vendor Page: Reviews</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Pages
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="about.html">About</a></li>
+		            <li class="nested-dropdown">
+		            	<a class="dropdown-item nested-dropdown-item dropdown-toggle" href="#">Blog</a>
+						 <ul class="dropdown-menu nested-dropdown-menu">
+							<li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+		            		<li><a class="dropdown-item" href="single_post.html">Single Post</a></li>
+						</ul>
+		            </li>
+		            <li><a class="dropdown-item" href="contacts.html">Contact</a></li>
+		            <li><a class="dropdown-item" href="help_center.html">Help Center</a></li>
+		            <li><a class="dropdown-item" href="404_not_found.html">404 Not Found</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <div class="sign-in-button">
+		      	<a href="sign_in.html" class="color-red d-flex align-items-center"><i class="fa-regular fa-user me-2"></i> Sign in</a>
+		      </div>
+		      <div>
+		        <a href="add_property.html" class="btn"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<!-- ======= Banner Section ====== -->
+	<section class="banner-section" id="home"> 
+		<div class="container-fluid">
+			<div class="row">
+				<div class="banner-text text-center">
+					<h1 class="color-white">Easy way to find a perfect property</h1>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ======= Property Categories ====== -->
+	<section class="property-category pt-50 mb-5">
+		<div class="container">
+			<div class="row g-3">
+				<div class="col-6 col-md-4 col-lg">
+					<a href="property_for_rent.html">
+						<div class="property-box">
+							<i class="fa-solid fa-house"></i>
+							<h6>Houses</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg">
+					<a href="property_for_sale.html">
+						<div class="property-box">
+							<i class="fa-solid fa-house"></i>
+							<h6>Apartments</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg">
+					<a href="property_for_rent.html">
+						<div class="property-box">
+							<i class="fa-solid fa-house"></i>
+							<h6>Commercial</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg">
+					<a href="property_for_sale.html">
+						<div class="property-box">
+							<i class="fa-solid fa-house"></i>
+							<h6>Daily rental</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg">
+					<a href="property_for_rent.html">
+						<div class="property-box">
+							<i class="fa-solid fa-house"></i>
+							<h6>New buildings</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg position-relative" id="more-property-btn">
+					<a href="#!">
+						<div class="property-box">
+							<i class="fa-solid fa-ellipsis"></i>
+							<h6>More</h6>
+						</div>
+						<ul class="nav box-shadow round more-property-display" id="more-property-dropdown">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link"><img src="./images/icons/bed.png"> Room</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link"><img src="./images/icons/laptop.png"> Office</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link"><img src="./images/icons/location-pin.png"> Land</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link"><img src="./images/icons/parking-sign.png"> Parking lot</a></li>
+						</ul>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== Services Section ====== -->
+	<section class="services">
+		<div class="container">
+			<div class="row text-center">
+	
+				<div class="service-slider">
+					<!-- Card 1 -->
+					<div class="card text-center">
+						<a href="property_for_sale.html">
+							<img src="./images/buy.svg" class="card-img-top m-auto" alt="Service Card Image" style="width: 70%;">
+							<div class="card-body mt-5 p-0">
+								<h2 class="h4 card-title">Buy a property</h2>
+								<p class="card-text fs-14">Blandit lorem dictum in velit. Et nisi at faucibus mauris pretium enim. Risus sapien nisi aliquam egestas leo dignissim.</p>
+								<a href="#" class="btn-2 mt-3">Find a home</a>
+							</div>
+						</a>
+					</div>
+					<!-- Card 2 -->
+					<div class="card text-center">
+						<a href="#">
+							<img src="./images/sell.svg" class="card-img-top m-auto" alt="Service Card Image" style="width: 70%;">
+							<div class="card-body mt-5 p-0">
+								<h2 class="h4 card-title">Sell a property</h2>
+								<p class="card-text fs-14">Blandit lorem dictum in velit. Et nisi at faucibus mauris pretium enim. Risus sapien nisi aliquam egestas leo dignissim.</p>
+								<a href="#" class="btn-2 mt-3">Place an ad</a>
+							</div>
+						</a>
+					</div>
+					<!-- Card 3 -->
+					<div class="card text-center">
+						<a href="property_for_rent.html">
+							<img src="./images/rent.svg" class="card-img-top m-auto" alt="Service Card Image" style="width: 70%;">
+							<div class="card-body mt-5 p-0">
+								<h2 class="h4 card-title">Rent a property</h2>
+								<p class="card-text fs-14">Blandit lorem dictum in velit. Et nisi at faucibus mauris pretium enim. Risus sapien nisi aliquam egestas leo dignissim.</p>
+								<a href="#" class="btn-2 mt-3">Find a rental</a>
+							</div>
+						</a>
+					</div>		
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ====== Offers Section ===== -->
+	<section class="offers pt-50">
+		<div class="container">
+			<!-- Heading row -->
+			<div class="d-flex justify-content-between align-items-center mb-3">
+				<div>
+					<h2 class="h3">Top offers</h2>
+				</div>
+				<div class="view-text">
+					<a href="property_for_rent.html">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+				</div>
+			</div>
+
+			<!-- Content row -->
+			<div class="row">
+				<div class="offers-slider pb-32">
+					<!-- Card 1 -->
+					<div class="card">
+						<div>
+							<a href="single_property_v.1.html"><img src="./images/01.jpg" class="card-img-top" alt="Offers Card Image"></a>
+							<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+								<span class="box bg-green">Verified</span>
+								<span class="box bg-blue">New</span>
+							</div>
+							<div class="position-absolute end-0 top-0 mt-3 me-3">
+								<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+							</div>
+							<div class="card-body p-3 p-0">
+								<h5 class="color-red">FOR RENT</h5>
+								<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+								<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+								<span><i class="ti-image"></i> $1,628</span>
+							</div>
+						</div>
+						<hr>
+						<div class="card-footer text-center">
+							<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+  						</div>
+					</div>
+					<!-- Card 2 -->
+					<div class="card">
+						<div>
+							<a href="single_property_v.1.html"><img src="./images/02.jpg" class="card-img-top" alt="Offers Card Image"></a>
+							<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+								<span class="box bg-green">Verified</span>
+								<span class="box bg-red">Featured</span>
+							</div>
+							<div class="position-absolute end-0 top-0 mt-3 me-3">
+								<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+							</div>
+							<div class="card-body p-3 p-0">
+								<h5 class="color-red">FOR SALE</h5>
+								<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+								<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+								<span><i class="ti-image"></i> $1,628</span>
+							</div>
+						</div>
+						<hr>
+						<div class="card-footer text-center">
+    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+  						</div>
+					</div>
+					<!-- Card 3 -->
+					<div class="card">
+						<div>
+							<a href="single_property_v.1.html"><img src="./images/03.jpg" class="card-img-top" alt="Offers Card Image"></a>
+							<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+								<span class="box bg-green">Verified</span>
+							</div>
+							<div class="position-absolute end-0 top-0 mt-3 me-3">
+								<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+							</div>
+							<div class="card-body p-3 p-0">
+								<h5 class="color-red">FOR RENT</h5>
+								<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+								<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+								<span><i class="ti-image"></i> $1,628</span>
+							</div>
+						</div>
+						<hr>
+						<div class="card-footer text-center">
+    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+  						</div>
+					</div>
+					<!-- Card 4 -->
+					<div class="card">
+						<div>
+							<a href="single_property_v.1.html"><img src="./images/04.jpg" class="card-img-top" alt="Offers Card Image"></a>
+							<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+								<span class="box bg-green">Verified</span>
+								<span class="box bg-blue">New</span>
+							</div>
+							<div class="position-absolute end-0 top-0 mt-3 me-3">
+								<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+							</div>
+							<div class="card-body p-3 p-0">
+								<h5 class="color-red">FOR SALE</h5>
+								<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+								<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+								<span><i class="ti-image"></i> $1,628</span>
+							</div>
+						</div>
+						<hr>
+						<div class="card-footer text-center">
+    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+  						</div>
+					</div>
+					<!-- Card 5 -->
+					<div class="card">
+						<div>
+							<a href="single_property_v.1.html"><img src="./images/01.jpg" class="card-img-top" alt="Offers Card Image"></a>
+							<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+								<span class="box bg-green">Verified</span>
+								<span class="box bg-blue">New</span>
+							</div>
+							<div class="position-absolute end-0 top-0 mt-3 me-3">
+								<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+							</div>
+							<div class="card-body p-3 p-0">
+								<h5 class="color-red">FOR RENT</h5>
+								<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+								<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+								<span><i class="ti-image"></i> $1,628</span>
+							</div>
+						</div>
+						<hr>
+						<div class="card-footer text-center">
+    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+	    					<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+  						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ====== Recently Added Section ===== -->
+	<section class="recently-added pt-70">
+		<div class="container overflow-hidden">
+			<!-- Heading row -->
+			<div class="d-flex justify-content-between align-items-center mb-3">
+				<div class="d-flex justify-content-between justify-content-lg-start w-100">
+					<h2 class="h3">Added today</h2>
+					<ul class="nav nav-tabs ms-3">
+						<li class="nav-item"><a href="#" class="nav-link">Apartments</a></li>
+						<li class="nav-item"><a class="nav-link active">Houses</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Rooms</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Commercial</a></li>
+					</ul>
+				</div>
+				<div class="view-text">
+					<a href="property_for_rent.html">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+				</div>
+			</div>
+
+			<!-- Content row -->
+			<div class="row g-4">
+				<!-- Left Col -->
+				<div class="col-md-6">
+					<!-- box 1 -->
+					<div class="content-box bg-1 position-relative">
+						<div class="position-absolute strat-0 top-0 mt-3 ms-3 d-flex">
+							<span class="box bg-green">Verified</span>
+							<span class="box bg-blue ms-2">New</span>
+						</div>
+						<div class="content-box-body position-absolute strat-0 bottom-0">
+							<a href="single_property_v.1.html">
+								<h5>FOR RENTAL</h5>
+								<h2 class="h5">Luxury Rental Villa</h2>
+							    <p class="fs-14 mb-2 color-white opacity-75">118-11 Ditmars Blvd Astoria, NY 13476</p>
+							</a>
+							<a href="single_property_v.1.html" class="btn-3 mb-2"><i class="fa-solid fa-heart"></i> From $3,850</a>
+						</div>
+					</div>
+				</div>
+				<!-- Right Col -->
+				<div class="col-md-6 d-table">
+					<!-- box 2 -->
+					<div class="content-box bg-2 position-relative">
+						<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+							<span class="box bg-green">Verified</span>
+						</div>
+						<div class="content-box-body position-absolute strat-0 bottom-0">
+							<a href="single_property_v.1.html">
+								<h5>FOR RENTAL</h5>
+								<h2 class="h5">Luxury Rental Villa</h2>
+							    <p class="fs-14 mb-2 color-white opacity-75">118-11 Ditmars Blvd Astoria, NY 13476</p>
+							</a>
+							<a href="single_property_v.1.html" class="btn-3 mb-2"><i class="fa-solid fa-heart"></i> From $3,850</a>
+						</div>
+					</div>
+					<!-- box 3 -->
+					<div class="content-box bg-3 position-relative mt-4">
+						<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+							<span class="box bg-green">Verified</span>
+						</div>
+						<div class="content-box-body position-absolute strat-0 bottom-0">
+							<a href="single_property_v.1.html">
+								<h5>FOR RENTAL</h5>
+								<h2 class="h5">Luxury Rental Villa</h2>
+							    <p class="fs-14 mb-2 color-white opacity-75">118-11 Ditmars Blvd Astoria, NY 13476</p>
+							</a>
+							<a href="single_property_v.1.html" class="btn-3 mb-2"><i class="fa-solid fa-heart"></i> From $3,850</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ====== Cities Section (crosual) ====== -->
+	<section class="cities pt-50">
+		<div class="container">
+			<!-- Heading row -->
+			<div class="d-flex justify-content-between align-items-center mb-3">
+				<div>
+					<h2 class="h3">Search property by city</h2>
+				</div>
+				<div class="view-text">
+					<a href="property_for_rent.html">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+				</div>
+			</div>
+
+			<!-- Content row -->
+			<div class="row">
+				<div class="cities-slider pb-32">
+					<!-- Card 1 -->
+					<div class="card">
+						<a href="property_for_rent.html">
+							<img src="./images/new-york.jpg" class="card-img-top" alt="Cities Card Image">
+							<div class="position-absolute p-3 cities-progress-bar">
+								<span class="fs-12 color-white">Property for sale</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress mb-2 me-2">
+								  	    <div class="progress-bar bg-red" role="progressbar" style="width: 25%">	</div>
+								    </div>
+								    <span class="fs-14 color-white mb-2">892</span>
+								</div>
+								<span class="fs-12 color-white">Property for rent</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress me-2">
+								  	    <div class="progress-bar bg-green" role="progressbar" style="width: 75%">	</div>
+								    </div>
+								    <span class="fs-14 color-white">3462</span>
+								</div>
+							</div>
+							<div class="card-body text-center p-3 p-0">
+								<h2 class="h6 card-title">New York</h2>
+							</div>
+						</a>
+					</div>
+					<!-- Card 2 -->
+					<div class="card">
+						<a href="property_for_sale.html">
+							<img src="./images/chicago.jpg" class="card-img-top" alt="Cities Card Image">
+							<div class="position-absolute p-3 cities-progress-bar">
+								<span class="fs-12 color-white">Property for sale</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress mb-2 me-2">
+								  	    <div class="progress-bar bg-red" role="progressbar" style="width: 25%">	</div>
+								    </div>
+								    <span class="fs-14 color-white mb-2">892</span>
+								</div>
+								<span class="fs-12 color-white">Property for rent</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress me-2">
+								  	    <div class="progress-bar bg-green" role="progressbar" style="width: 75%">	</div>
+								    </div>
+								    <span class="fs-14 color-white">3462</span>
+								</div>
+							</div>
+							<div class="card-body text-center p-3 p-0">
+								<h2 class="h6 card-title">Chicago</h2>
+							</div>
+						</a>
+					</div>
+					<!-- Card 3 -->
+					<div class="card">
+						<a href="property_for_rent.html">
+							<img src="./images/los-angeles.jpg" class="card-img-top" alt="Cities Card Image">
+							<div class="position-absolute p-3 cities-progress-bar">
+								<span class="fs-12 color-white">Property for sale</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress mb-2 me-2">
+								  	    <div class="progress-bar bg-red" role="progressbar" style="width: 25%">	</div>
+								    </div>
+								    <span class="fs-14 color-white mb-2">892</span>
+								</div>
+								<span class="fs-12 color-white">Property for rent</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress me-2">
+								  	    <div class="progress-bar bg-green" role="progressbar" style="width: 75%">	</div>
+								    </div>
+								    <span class="fs-14 color-white">3462</span>
+								</div>
+							</div>
+							<div class="card-body text-center p-3 p-0">
+								<h2 class="h6 card-title">Los Angeles</h2>
+							</div>
+						</a>
+					</div>
+					<!-- Card 4 -->
+					<div class="card">
+						<a href="property_for_sale.html">
+							<img src="./images/san-diego.jpg" class="card-img-top" alt="Cities Card Image">
+							<div class="position-absolute p-3 cities-progress-bar">
+								<span class="fs-12 color-white">Property for sale</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress mb-2 me-2">
+								  	    <div class="progress-bar bg-red" role="progressbar" style="width: 25%">	</div>
+								    </div>
+								    <span class="fs-14 color-white mb-2">892</span>
+								</div>
+								<span class="fs-12 color-white">Property for rent</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress me-2">
+								  	    <div class="progress-bar bg-green" role="progressbar" style="width: 75%">	</div>
+								    </div>
+								    <span class="fs-14 color-white">3462</span>
+								</div>
+							</div>
+							<div class="card-body text-center p-3 p-0">
+								<h2 class="h6 card-title">San Diego</h2>
+							</div>
+						</a>
+					</div>
+					<!-- Card 5 -->
+					<div class="card">
+						<a href="property_for_rent.html">
+							<img src="./images/dallas.jpg" class="card-img-top" alt="Cities Card Image">
+							<div class="position-absolute p-3 cities-progress-bar">
+								<span class="fs-12 color-white">Property for sale</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress mb-2 me-2">
+								  	    <div class="progress-bar bg-red" role="progressbar" style="width: 25%">	</div>
+								    </div>
+								    <span class="fs-14 color-white mb-2">892</span>
+								</div>
+								<span class="fs-12 color-white">Property for rent</span>
+								<div class="d-flex align-items-center">
+								    <div class="progress me-2">
+								  	    <div class="progress-bar bg-green" role="progressbar" style="width: 75%">	</div>
+								    </div>
+								    <span class="fs-14 color-white">3462</span>
+								</div>
+							</div>
+							<div class="card-body text-center p-3 p-0">
+								<h2 class="h6 card-title">Dallas</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ====== Footer ====== -->
+	<footer class="mt-50 bg-light-white overflow-hidden">
+		<div class="container">
+			<!-- Footer row 1 -->
+			<div class="row pt-50 mb-6">
+				<div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-between mt-lg-4">
+					<div class="d-flex flex-column">
+						<a href="index.html"><img src="./images/logo-dark.svg" class="img-fluid" style="width: 120px;"></a>
+						<ul class="nav flex-column my-4">
+							<li class="nav-item"><a href="mailto:example@email.com" class="nav-link"><i class="fa-solid fa-envelope"></i> example@email.com</a></li>
+							<li class="nav-item"><a href="tel:4065550120" class="nav-link"><i class="fa-solid fa-mobile-screen-button"></i> (406) 555-0120</a></li>
+						</ul>
+						<div class="footer-icon">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="#"><i class="fa-brands fa-telegram"></i></a>
+						</div>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">Quick Links</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Buy a property</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Sell a property</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link">Rent a property</a></li>
+							<li class="nav-item"><a href="single_property_v.1.html" class="nav-link">Single property</a></li>
+							<li class="nav-item"><a href="personal_info.html" class="nav-link">Personal Info</a></li>
+							<li class="nav-item"><a href="my_properties.html" class="nav-link">My Properties</a></li>
+						</ul>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">About</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+							<li class="nav-item"><a href="help_center.html" class="nav-link">Help & support</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-5 offset-xl-1 mt-4 mt-lg-0 footer-right-col mt-lg-4">
+					<div class="d-flex flex-column">
+						<h2 class="h5">Recent Posts</h2>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th01.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">HOME IMPROVEMENT</h5>
+								<h2 class="h6"><a href="blog.html">Your Guide to a Smart Apartment Searching</a></h2>
+								<p class="fs-14 mb-2">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Dec 4</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> 2 comments</a></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th02.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">TIPS & ADVICE</h5>
+								<h2 class="h6"><a href="blog.html">Top 10 Ways to Refresh Your Space</a></h2>
+								<p class="fs-14 mb-2">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Nov 14</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> No comments</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 0rem -200px">
+			<!-- Footer row 2 -->
+			<div class="row text-center">
+				<p class="mt-6 mb-6">&copy; All rights reserved. Made by <span class="color-light-white fw-700">Rohit Saini</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ======= Scroll back to Top ======= -->
+	<div id="scrollUp" class="scrollActive d-flex align-items-center">
+		<span class="me-1 fs-14">Top</span>
+		<a href="#home"><i class="fa-solid fa-chevron-up color-white"></i></a>
+	</div>
+
+</main>
+
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Slick Slider JS -->
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font-awesome Icons -->
+	<link rel="stylesheet" href="./fontawesome-free/css/all.css">
+
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<title>Real Estate</title>
+
+</head>
+<body>
+
+<main>
+	<!-- ======= Navigation Bar ====== -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="./images/logo-dark.svg" class="img-fluid">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon mx-3"><i class="fa-solid fa-bars-staggered"></i></span>
+		      <a class="btn" type="submit">Add</a>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto m-auto">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Catalog
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="property_for_rent.html">Property for Rent</a></li>
+		            <li><a class="dropdown-item" href="property_for_sale.html">Property for Sale</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.1.html">Single Property v.1</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.2.html">Single Property v.2</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Account
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="personal_info.html">Personal Info</a></li>
+		            <li><a class="dropdown-item" href="password_and_security.html">Password & Security</a></li>
+		            <li><a class="dropdown-item" href="my_properties.html">My Properties</a></li>
+		            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+		            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+		            <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+		            <li><a class="dropdown-item" href="sign_in.html">Sign In</a></li>
+		            <li><a class="dropdown-item" href="sign_up.html">Sign Up</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Vendor
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="add_property.html">Add Property</a></li>
+		            <li><a class="dropdown-item" href="property_promotion.html">Property Promotion</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_properties.html">Vendor Page: Properties</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_reviews.html">Vendor Page: Reviews</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Pages
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="about.html">About</a></li>
+		            <li class="nested-dropdown">
+		            	<a class="dropdown-item nested-dropdown-item dropdown-toggle" href="#">Blog</a>
+						 <ul class="dropdown-menu nested-dropdown-menu">
+							<li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+		            		<li><a class="dropdown-item" href="single_post.html">Single Post</a></li>
+						</ul>
+		            </li>
+		            <li><a class="dropdown-item" href="contacts.html">Contact</a></li>
+		            <li><a class="dropdown-item" href="help_center.html">Help Center</a></li>
+		            <li><a class="dropdown-item" href="404_not_found.html">404 Not Found</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <div class="me-lg-3">
+		      	<ul class="navbar-nav mb-2 mb-lg-0">
+			      	<li class="nav-item dropdown">
+			          <a href="#" class="nav-link dropdown-toggle nav-img-logo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <div class="d-flex align-items-center">
+			            	<img src="./images/women-logo.jpg" class="rounded-circle" style="width: 40px; height: fit-content;">
+			          		<h3 class="h6 ms-2 m-0 d-block d-lg-none">Annette Black</h3>
+			            </div>
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          	<li>
+			          		<div class="d-flex px-3">
+								<img src="./images/women-logo.jpg" class="rounded-circle d-none d-lg-block" style="width: 50px; height: fit-content;">
+								<div class="d-flex flex-column ms-3 lh-16">
+			          				<h3 class="h6 m-0 d-none d-lg-block">Annette Black</h3>
+									<span class="mb-2">
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+									</span>
+									<p class="fs-12 m-0">(302) 555-0107</p>
+									<p class="fs-12 m-0">annette_black@email.com</p>
+								</div>
+							</div>
+			          	</li>
+			          	<hr class="mt-3 mb-2 d-none d-lg-block">
+			          	<li class="mt-2 mt-lg-0">
+						    <a class="dropdown-item" href="personal_info.html"><i class="fa-regular fa-user me-2"></i> Personal Info</a>
+						</li>
+						<li>
+				   		   <a href="password_and_security.html" class="dropdown-item"><i class="fa-solid fa-lock me-2"></i> Password & Security</a>
+				  		</li>
+			            <li>
+							<a href="my_properties.html" class="dropdown-item"><i class="fa-regular fa-building me-2"></i> My Properties</a>
+						</li>
+						<li>
+							<a href="wishlist.html" class="dropdown-item"><i class="fa-regular fa-heart me-2"></i> Wishlist</a>
+						</li>
+						<li>
+							<a href="reviews.html" class="dropdown-item"><i class="fa-regular fa-star me-2"></i> Reviews</a>
+						</li>
+						<li>
+							<a href="notifications.html" class="dropdown-item"><i class="fa-regular fa-bell me-2"></i> Notifications</a>
+						</li>
+						<hr class="m-2">
+						<li>
+							<a href="help_center.html" class="dropdown-item">Help</a>
+						</li>
+						<li>
+							<a href="sign_in.html" class="dropdown-item">Sign Out</a>
+						</li>
+
+			          </ul>
+			        </li>
+			    </ul>
+		      </div>
+		      <div>
+		        <a href="add_property.html" class="btn"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<!-- ====== Personal Info ======= -->
+	<section class="personal-info mt-4 overflow-hidden">
+		<div class="container">
+			<div class="row gx-5">
+				<div class="col-12">
+					<!-- Breadcrumb -->
+					<div class="breadcrumb">
+						<ul class="nav">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="account.html" class="nav-link">Account</a></li>
+							<li class="nav-item"><a class="nav-link">Personal Info</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Personal Info Left Col -->
+				<div class="col-md-5 col-lg-4 box-shadow p-0 pt-4 round" style="height: fit-content;">
+					<!-- Personal Info Col -->
+					<div class="d-flex flex-row flex-md-column flex-lg-row px-3">
+						<img src="./images/women-logo.jpg" class="rounded-circle" style="width: 50px;     height: fit-content;">
+						<div class="d-flex flex-column ms-3 ms-md-0 ms-lg-3 mt-0 mt-md-2 mt-lg-0">
+							<h3 class="h5 mb-1">Annette Black</h3>
+							<span>
+								<i class="fa-solid fa-star color-gold fs-14"></i>
+								<i class="fa-solid fa-star color-gold fs-14"></i>
+								<i class="fa-solid fa-star color-gold fs-14"></i>
+								<i class="fa-solid fa-star color-gold fs-14"></i>
+								<i class="fa-solid fa-star color-gold fs-14"></i>
+							</span>
+							<a href="tel:3025550107" class="fs-14 mt-3"><i class="fa-solid fa-phone me-1"></i> (302) 555-0107</a>
+							<a href="mailto:annette_black@email.com" class="fs-14"><i class="fa-regular fa-envelope me-1"></i> annette_black@email.com</a>
+						</div>
+					</div>
+					<!-- Add Property Button -->
+					<div class="mt-4 px-3">
+				        <a href="add_property.html" class="btn w-100" type="submit"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+				    </div>
+				    <!-- Personal Info navbar -->
+				    <div class="mt-2 mt-md-4 mx-3">
+				    	<nav class="navbar navbar-expand-md bg-white" id="navbar">
+						  	<div class="container p-0">
+							    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#personalContent" aria-controls="personalContent" aria-expanded="false" aria-label="Toggle navigation">
+							      <span class="navbar-toggler-icon mx-3 fs-14 fw-700"><i class="fa-solid fa-bars me-1"></i> Menu</span>
+							    </button>
+						    	<div class="collapse navbar-collapse" id="personalContent">
+		      						<ul class="nav mt-4 mt-md-0">
+							    		<li class="nav-item w-100 border-top">
+							    			<a class="nav-link px-0 py-3 account-active"><i class="fa-regular fa-user me-2"></i> Personal Info</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="password_and_security.html" class="nav-link px-0 py-3"><i class="fa-solid fa-lock me-2"></i> Password & Security</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="my_properties.html" class="nav-link px-0 py-3"><i class="fa-regular fa-building me-2"></i> My Properties</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="wishlist.html" class="nav-link px-0 py-3"><i class="fa-regular fa-heart me-2"></i> Wishlist</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="reviews.html" class="nav-link px-0 py-3"><i class="fa-regular fa-star me-2"></i> Reviews</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="notifications.html" class="nav-link px-0 py-3"><i class="fa-regular fa-bell me-2"></i> Notifications</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="help_center.html" class="nav-link px-0 py-3"><i class="fa-regular fa-circle-question me-2"></i> Help</a>
+							    		</li>
+							    		<li class="nav-item w-100 border-top">
+							    			<a href="sign_in.html" class="nav-link px-0 py-3"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i> Sign Out</a>
+							    		</li>
+				    				</ul> 
+							    <div> 
+					  	    </div>
+						</nav>
+				    </div>
+				</div>
+
+				<!-- Personal Info Right Col -->
+				<div class="col-md-7 col-lg-8 mt-4 mt-md-0">
+					<!-- Heading Col -->
+					<div>
+						<h2>Personal Info</h2>
+						<p class="mt-4">Your personal info is 50% completed</p>
+						<div class="progress">
+							<div class="progress-bar bg-gold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- Short bio Col -->
+					<div class="row mt-4">
+							<label class="">Short bio</label>
+						<div class="col-12 col-sm-8 mt-2">
+							<textarea class="w-100 border" cols="10" rows="6" placeholder="Write your bio here."></textarea>
+						</div>
+						<div class="col-12 col-sm-4 mt-2 mb-1">
+							<label for="change-picture" class="change-picture-label"><img src="./images/icons/camera.png"> Change picture</label>
+							<input type="file" accept="image/*" name="Image" id="change-picture">
+						</div>
+					</div>
+					<!-- Personal Details Col -->
+					<div class="mt-4 pt-3 px-3 border round personal-details">
+						<!-- First -->
+						<div>
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<h3 class="fs-16">Full name</h3>
+									<p>Annette Black</p>
+								</div>
+								<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#details-1" aria-expanded="false" aria-controls="details-1">
+							    		<i class="fa-regular fa-pen-to-square"></i>
+							  	</button>
+							</div>
+							<div class="collapse" id="details-1">
+								<input type="text" class="form-control mb-3" id="Name" value="Annette Black">
+							</div>
+						</div>
+						<!-- Second -->
+						<div>
+							<div class="d-flex justify-content-between align-items-center border-top">
+								<div class="mt-3">
+									<h3 class="fs-16">Email</h3>
+									<p>annette_black@email.com</p>
+								</div>
+								<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#details-2" aria-expanded="false" aria-controls="details-2">
+							    		<i class="fa-regular fa-pen-to-square"></i>
+							  	</button>
+							</div>
+							<div class="collapse" id="details-2">
+								<input type="email" class="form-control mb-3" id="Email" value="annette_black@email.com">
+							</div>
+						</div>
+						<!-- Third -->
+						<div>
+							<div class="d-flex justify-content-between align-items-center border-top">
+								<div class="mt-3">
+									<h3 class="fs-16">Phone number</h3>
+									<p>(302) 555-0107</p>
+								</div>
+								<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#details-3" aria-expanded="false" aria-controls="details-3">
+							    		<i class="fa-regular fa-pen-to-square"></i>
+							  	</button>
+							</div>
+							<div class="collapse" id="details-3">
+								<input type="tel" class="form-control mb-3" id="Number" value="(302) 555-0107">
+							</div>
+						</div>
+						<!-- Fourth -->
+						<div>
+							<div class="d-flex justify-content-between align-items-center border-top">
+								<div class="mt-3">
+									<h3 class="fs-16">Company name</h3>
+									<p>Not specified</p>
+								</div>
+								<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#details-4" aria-expanded="false" aria-controls="details-4">
+							    		<i class="fa-regular fa-pen-to-square"></i>
+							  	</button>
+							</div>
+							<div class="collapse" id="details-4">
+								<input type="text" class="form-control mb-3" id="companyName" placeholder="Enter company name">
+							</div>
+						</div>
+						<!-- Fifth -->
+						<div>
+							<div class="d-flex justify-content-between align-items-center border-top">
+								<div class="mt-3">
+									<h3 class="fs-16">Address</h3>
+									<p>Not specified</p>
+								</div>
+								<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#details-5" aria-expanded="false" aria-controls="details-5">
+							    		<i class="fa-regular fa-pen-to-square"></i>
+							  	</button>
+							</div>
+							<div class="collapse" id="details-5">
+								<input type="text" class="form-control mb-3" id="Address" value="Enter address">
+							</div>
+						</div>
+					</div>
+					<!-- Social Col -->
+					<div class="mt-4 mb-5 social-col">
+						<h3 class="fs-16">Socials</h3>
+						<div class="d-flex align-items-center mt-3">
+							<i class="fa-brands fa-facebook-f"></i>
+							<input type="text" class="form-input border ms-3 w-100" name="Facebook" placeholder="Your Facebook Account">
+						</div>
+						<div class="d-flex align-items-center mt-3">
+							<i class="fa-brands fa-linkedin-in"></i>
+							<input type="text" class="form-input border ms-3 w-100" name="Linkedin" placeholder="Your Linkedin Account">
+						</div>
+						<div class="d-flex align-items-center mt-3">
+							<i class="fa-brands fa-twitter"></i>
+							<input type="text" class="form-input border ms-3 w-100" name="Twitter" placeholder="Your Twitter Account">
+						</div>
+						<div class="d-flex align-items-center mt-3">
+							<i class="fa-brands fa-instagram"></i>
+							<input type="text" class="form-input border ms-3 w-100" name="Instagram" placeholder="Your Instagram Account">
+						</div>
+						<div class="d-flex align-items-center mt-3">
+							<i class="fa-brands fa-pinterest-p"></i>
+							<input type="text" class="form-input border ms-3 w-100" name="Pinterest" placeholder="Your Pinterest Account">
+						</div>
+					</div>
+					<hr>
+					<div class="mt-4 d-flex justify-content-between align-items-center">
+				        <button class="btn" type="submit" style="padding: 10px 22px;">Save Changes</button>
+				        <a href="#" class="fs-14 fw-700"><i class="fa-regular fa-trash-can ms-2"></i> Delete account</a>
+				    </div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ====== Footer ====== -->
+	<footer class="mt-50 bg-light-white overflow-hidden">
+		<div class="container">
+			<!-- Footer row 1 -->
+			<div class="row pt-50 mb-6">
+				<div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-between mt-lg-4">
+					<div class="d-flex flex-column">
+						<a href="index.html"><img src="./images/logo-dark.svg" class="img-fluid" style="width: 120px;"></a>
+						<ul class="nav flex-column my-4">
+							<li class="nav-item"><a href="mailto:example@email.com" class="nav-link"><i class="fa-solid fa-envelope"></i> example@email.com</a></li>
+							<li class="nav-item"><a href="tel:4065550120" class="nav-link"><i class="fa-solid fa-mobile-screen-button"></i> (406) 555-0120</a></li>
+						</ul>
+						<div class="footer-icon">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="#"><i class="fa-brands fa-telegram"></i></a>
+						</div>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">Quick Links</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Buy a property</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Sell a property</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link">Rent a property</a></li>
+							<li class="nav-item"><a href="single_property_v.1.html" class="nav-link">Single property</a></li>
+							<li class="nav-item"><a href="personal_info.html" class="nav-link">Personal Info</a></li>
+							<li class="nav-item"><a href="my_properties.html" class="nav-link">My Properties</a></li>
+						</ul>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">About</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+							<li class="nav-item"><a href="help_center.html" class="nav-link">Help & support</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-5 offset-xl-1 mt-4 mt-lg-0 footer-right-col mt-lg-4">
+					<div class="d-flex flex-column">
+						<h2 class="h5">Recent Posts</h2>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th01.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">HOME IMPROVEMENT</h5>
+								<h2 class="h6"><a href="blog.html">Your Guide to a Smart Apartment Searching</a></h2>
+								<p class="fs-14 mb-2">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Dec 4</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> 2 comments</a></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th02.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">TIPS & ADVICE</h5>
+								<h2 class="h6"><a href="blog.html">Top 10 Ways to Refresh Your Space</a></h2>
+								<p class="fs-14 mb-2">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Nov 14</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> No comments</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 0rem -200px">
+			<!-- Footer row 2 -->
+			<div class="row text-center">
+				<p class="mt-6 mb-6">&copy; All rights reserved. Made by <span class="color-light-white fw-700">Rohit Saini</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ======= Scroll back to Top ======= -->
+	<div id="scrollUp" class="scrollActive d-flex align-items-center">
+		<span class="me-1 fs-14">Top</span>
+		<a href="#home"><i class="fa-solid fa-chevron-up color-white"></i></a>
+	</div>
+
+</main>
+
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<!-- Slick Slider JS -->
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+</body>
+</html>

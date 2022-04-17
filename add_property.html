@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font-awesome Icons -->
+	<link rel="stylesheet" href="./fontawesome-free/css/all.css">
+
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<title>Real Estate</title>
+
+</head>
+<body>
+
+<main>
+	<!-- ======= Navigation Bar ====== -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="./images/logo-dark.svg" class="img-fluid">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon mx-3"><i class="fa-solid fa-bars-staggered"></i></span>
+		      <a class="btn" type="submit">Add</a>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto m-auto">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Catalog
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="property_for_rent.html">Property for Rent</a></li>
+		            <li><a class="dropdown-item" href="property_for_sale.html">Property for Sale</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.1.html">Single Property v.1</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.2.html">Single Property v.2</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Account
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="personal_info.html">Personal Info</a></li>
+		            <li><a class="dropdown-item" href="password_and_security.html">Password & Security</a></li>
+		            <li><a class="dropdown-item" href="my_properties.html">My Properties</a></li>
+		            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+		            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+		            <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+		            <li><a class="dropdown-item" href="sign_in.html">Sign In</a></li>
+		            <li><a class="dropdown-item" href="sign_up.html">Sign Up</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Vendor
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="add_property.html">Add Property</a></li>
+		            <li><a class="dropdown-item" href="property_promotion.html">Property Promotion</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_properties.html">Vendor Page: Properties</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_reviews.html">Vendor Page: Reviews</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Pages
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="about.html">About</a></li>
+		            <li class="nested-dropdown">
+		            	<a class="dropdown-item nested-dropdown-item dropdown-toggle" href="#">Blog</a>
+						 <ul class="dropdown-menu nested-dropdown-menu">
+							<li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+		            		<li><a class="dropdown-item" href="single_post.html">Single Post</a></li>
+						</ul>
+		            </li>
+		            <li><a class="dropdown-item" href="contacts.html">Contact</a></li>
+		            <li><a class="dropdown-item" href="help_center.html">Help Center</a></li>
+		            <li><a class="dropdown-item" href="404_not_found.html">404 Not Found</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <div class="me-lg-3">
+		      	<ul class="navbar-nav mb-2 mb-lg-0">
+			      	<li class="nav-item dropdown">
+			          <a href="#" class="nav-link dropdown-toggle nav-img-logo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <div class="d-flex align-items-center">
+			            	<img src="./images/women-logo.jpg" class="rounded-circle" style="width: 40px; height: fit-content;">
+			          		<h3 class="h6 ms-2 m-0 d-block d-lg-none">Annette Black</h3>
+			            </div>
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          	<li>
+			          		<div class="d-flex px-3">
+								<img src="./images/women-logo.jpg" class="rounded-circle d-none d-lg-block" style="width: 50px; height: fit-content;">
+								<div class="d-flex flex-column ms-3 lh-16">
+			          				<h3 class="h6 m-0 d-none d-lg-block">Annette Black</h3>
+									<span class="mb-2">
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+										<i class="fa-solid fa-star color-gold fs-12"></i>
+									</span>
+									<p class="fs-12 m-0">(302) 555-0107</p>
+									<p class="fs-12 m-0">annette_black@email.com</p>
+								</div>
+							</div>
+			          	</li>
+			          	<hr class="mt-3 mb-2 d-none d-lg-block">
+			          	<li class="mt-2 mt-lg-0">
+						    <a class="dropdown-item" href="personal_info.html"><i class="fa-regular fa-user me-2"></i> Personal Info</a>
+						</li>
+						<li>
+				   		   <a href="password_and_security.html" class="dropdown-item"><i class="fa-solid fa-lock me-2"></i> Password & Security</a>
+				  		</li>
+			            <li>
+							<a href="my_properties.html" class="dropdown-item"><i class="fa-regular fa-building me-2"></i> My Properties</a>
+						</li>
+						<li>
+							<a href="wishlist.html" class="dropdown-item"><i class="fa-regular fa-heart me-2"></i> Wishlist</a>
+						</li>
+						<li>
+							<a href="reviews.html" class="dropdown-item"><i class="fa-regular fa-star me-2"></i> Reviews</a>
+						</li>
+						<li>
+							<a href="notifications.html" class="dropdown-item"><i class="fa-regular fa-bell me-2"></i> Notifications</a>
+						</li>
+						<hr class="m-2">
+						<li>
+							<a href="help_center.html" class="dropdown-item">Help</a>
+						</li>
+						<li>
+							<a href="sign_in.html" class="dropdown-item">Sign Out</a>
+						</li>
+
+			          </ul>
+			        </li>
+			    </ul>
+		      </div>
+		      <div>
+		        <a href="add_property.html" class="btn"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<!-- ====== Vendor - Add property ======= -->
+	<section class="add-property py-4">
+		<div class="container">
+			<div class="row gx-5 justify-content-between">
+				<div class="col-12">
+					<!-- Breadcrumb -->
+					<div class="breadcrumb">
+						<ul class="nav">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a class="nav-link">Add property</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Vendor Left Col -->
+				<div class="col-12 col-lg-8 px-3 pt-4">
+					<!-- Heading -->
+					<div>
+						<h2>Add property</h2>
+					</div>
+					<!-- Progress bar -->
+					<div class="mt-3 d-block d-lg-none">
+						<span>65% content filled</span>
+						<div class="progress mt-2">
+							<div class="progress-bar bg-gold" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- Basic info -->
+					<div class="mt-4 p-4 box-shadow round" id="basic-info">
+						<h4><i class="fa-regular fa-circle-question fs-20 color-red"></i> Basic info</h4>
+						<div class="mt-4">
+							<div class="mb-3">
+								<label for="Title" class="form-label">Title <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<input type="text" class="form-control" id="Title" value="Pine Apartments">
+								<span class="form-text">48 characters left</span>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="mb-3 mb-lg-0 col-sm-6">
+								<label for="Category" class="form-label">Category <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<select class="form-select mb-2 color-light-white" id="Category">
+									<option value="1" selected>For rent</option>
+									<option value="2">For sale</option>
+								</select>
+							</div>
+							<div class="col-sm-6">
+								<label for="Property_type" class="form-label">Property type <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<select class="form-select mb-2 color-light-white" id="Property_type">
+									<option value="1" selected>Apartment</option>
+									<option value="2">House</option>
+									<option value="3">Commercial</option>
+									<option value="4">Daily rental</option>
+									<option value="5">New building</option>
+								</select>
+							</div>
+						</div>
+						<div class="mt-4">
+							<h5 class="fs-16">Are you listing on Finder as part of a company?</h5>
+							<div class="form-check">
+							  <input class="form-check-input" type="radio" name="profession" id="profession1">
+							  <label class="form-check-label" for="profession1">I am a registered business</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="radio" name="profession" value="" id="profession2" checked>
+							  <label class="form-check-label" for="profession2">I am a private seller</label>
+							</div>
+						</div>
+					</div>
+					<!-- Location -->
+					<div class="mt-4 p-4 box-shadow round" id="location">
+						<h4><i class="fa-solid fa-location-crosshairs fs-20 color-red"></i> Location</h4>
+						<div class="row mt-4">
+							<div class="mb-3 mb-sm-0 col-sm-6">
+								<label for="country" class="form-label">Country / region <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<select class="form-select mb-2 color-light-white" id="country">
+									<option disabled>Choose country</option>
+									<option value="1">Australia</option>
+									<option value="2">Belgium</option>
+									<option value="3">Canada</option>
+									<option value="4" selected>India</option>
+									<option value="5">United State</option>
+								</select>
+							</div>
+							<div class="mb-3 mb-sm-0 col-sm-6">
+								<label for="city" class="form-label">City <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<select class="form-select mb-2 color-light-white" id="city">
+									<option disabled>Choose city</option>
+									<option value="1">Chicago</option>
+									<option value="2">Dallas</option>
+									<option value="3" selected>Delhi</option>
+									<option value="4">Los Angeles</option>
+									<option value="5">New York</option>
+								</select>
+							</div>
+						</div>
+						<div class="row mt-0 mt-sm-4">
+							<div class="mb-3 mb-sm-0 col-sm-8">
+								<label for="district" class="form-label">District <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<select class="form-select mb-2 color-light-white" id="district">
+									<option disabled>Choose district</option>
+									<option value="1">Brooklyn</option>
+									<option value="2">Manhattan</option>
+									<option value="3">Staten Island</option>
+									<option value="4" selected>The Bronu</option>
+									<option value="5">Queens</option>
+								</select>
+							</div>
+							<div class="mb-3 mb-sm-0 col-sm-4">
+								<label for="Zip_code" class="form-label">Zip code <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<input type="text" class="form-control" id="Zip_code" value="67234">
+							</div>
+						</div>
+						<div class="mt-0 mt-sm-4">
+							<div class="mb-3">
+								<label for="street_address" class="form-label">Street address <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+								<input type="text" class="form-control" id="street_address" value="28 Jackson Avenue">
+							</div>
+						</div>
+						<div class="mt-4">
+							<h5 class="fs-16 mb-3">Display on the map</h5>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.38256348536!2d75.65047013538644!3d26.88544791745257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1647626174918!5m2!1sen!2sin" style="width: 100%; height: 250px; border-radius: 12px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</div>
+					<!-- Property details -->
+					<div class="mt-4 p-4 box-shadow round" id="property-details">
+						<h4><i class="fa-regular fa-pen-to-square fs-20 color-red"></i> Property details</h4>
+						<div class="row mt-4">
+							<div class="col-lg-6">
+								<label for="area" class="form-label">Total area, sq.m</label>
+								<input type="number" min="20" class="form-control" id="area" value="56" required>
+							</div>
+						</div>
+						<div class="beds-baths mt-4">
+							<h5 class="fs-16">Bedrooms</h5>
+							<ul class="nav flex-row mt-3">
+								<li class="nav-item"><a href="#" class="nav-link">Studio</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">1</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">2</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">3</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">4+</a></li>
+							</ul>
+							<h5 class="fs-16 mt-4">Bathrooms</h5>
+							<ul class="nav flex-row mt-3">
+								<li class="nav-item"><a href="#" class="nav-link">1</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">2</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">3</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">4</a></li>
+							</ul>
+							<h5 class="fs-16 mt-4">Parking spots</h5>
+							<ul class="nav flex-row mt-3">
+								<li class="nav-item"><a href="#" class="nav-link">1</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">2</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">3</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">4</a></li>
+							</ul>
+						</div>
+						<div class="mt-4">
+							<h5 class="fs-16 mb-3">Amenities</h5>
+							<div class="row">
+								<div class="col-sm-4">
+									<form>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="WiFi" checked>
+										  <label class="form-check-label" for="WiFi">WiFi</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Air" checked>
+										  <label class="form-check-label" for="Air">Air conditioning</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Balcony">
+										  <label class="form-check-label" for="Balcony">Balcony</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Garage">
+										  <label class="form-check-label" for="Garage">Garage</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Gym">
+										  <label class="form-check-label" for="Gym">Gym</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Parking" checked>
+										  <label class="form-check-label" for="Parking">Free Parking</label>
+										</div>
+									</form>
+								</div>
+								<div class="col-sm-4">
+									<form>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Pets-friendly">
+										  <label class="form-check-label" for="Pets-friendly">Pets-friendly</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Pool">
+										  <label class="form-check-label" for="Pool">Pool</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Bar">
+										  <label class="form-check-label" for="Bar">Bar</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="TV" checked>
+										  <label class="form-check-label" for="TV">TV</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Lines" checked>
+										  <label class="form-check-label" for="Lines">Lines</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Heating" checked>
+										  <label class="form-check-label" for="Heating">Heating</label>
+										</div>
+									</form>
+								</div>
+								<div class="col-sm-4">
+									<form>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Dishwasher">
+										  <label class="form-check-label" for="Dishwasher">Dishwasher</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Iron" checked>
+										  <label class="form-check-label" for="Iron">Iron</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Hair_dryer" checked>
+										  <label class="form-check-label" for="Hair dryer">Hair_dryer</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Kitchen" checked>
+										  <label class="form-check-label" for="Kitchen">Kitchen</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Breakfast">
+										  <label class="form-check-label" for="Breakfast">Breakfast</label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="Security_cameras">
+										  <label class="form-check-label" for="Security_cameras">Security_cameras</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="mt-4">
+							<h5 class="fs-16 mb-3">Pets</h5>
+							<form>
+								<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="Cats">
+								  <label class="form-check-label" for="Cats">Cats allowed</label>
+								</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="Dogs">
+								  <label class="form-check-label" for="Dogs">Dogs allowed</label>
+								</div>
+							</form>
+						</div>
+						<div class="mt-4">
+							<label class="color-black">Description</label>
+							<div class="mt-2">
+								<textarea class="w-100 border" cols="10" rows="6" placeholder="Describe your property"></textarea>
+							</div>
+							<label class="fs-14">1500 characters left</label>
+						</div>
+					</div>
+					<!-- Price -->
+					<div class="mt-4 p-4 box-shadow round" id="price">
+						<h4><i class="fa-solid fa-wallet fs-20 color-red"></i> Price</h4>
+						<div class="row mt-3 g-2">
+							<label for="price" class="form-label m-0">Price <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+							<div class="col-4 col-sm-2">
+								<select class="form-select">
+				                    <option value="dollar" selected>&dollar;</option>
+				                    <option value="Belgium">&pound;</option>
+				                    <option value="yen">&yen;</option>
+				                    <option value="euro">&euro;</option>
+				                </select>
+							</div>
+							<div class="col-12 col-sm-6">
+								<input type="number" min="200" step="50" class="form-control" id="price" required>
+							</div>
+							<div class="col-6 col-sm-4">
+								<select class="form-select">
+				                    <option value="day">per day</option>
+				                    <option value="week">per week</option>
+				                    <option value="month" selected>per month</option>
+				                    <option value="year">per year</option>
+				                </select>
+							</div>
+						</div>
+					</div>
+					<!-- Photos / video -->
+					<div class="mt-4 p-4 box-shadow round" id="photos-or-video">
+						<h4><i class="fa-regular fa-image fs-20 color-red"></i> Photos / video</h4>
+						<div class="alert-info d-flex align-items-baseline p-3">
+							<i class="fa-regular fa-circle-question fs-14 me-3"></i>
+							<p class="m-0 fs-14">The maximum photo size is 8 MB. Formats: jpeg, jpg, png. Put the main picture first.<br> The maximum video size is 10 MB. Formats: mp4, mov.</p>
+						</div>
+						<div class="mt-4 text-center alert-file">
+							<label for="change-video" class="change-video-label"><a class="btn mb-3"><i class="fa-solid fa-cloud-arrow-up me-1"></i> Upload photos / video</a> or drag them in</label>
+							<input type="file" accept="video/*,image/*" name="Image" id="change-video">
+						</div>
+					</div>
+					<!-- Contacts -->
+					<div class="row mx-0 mt-4 p-4 box-shadow round" id="contact">
+						<h4><i class="fa-regular fa-circle-question fs-20 color-red"></i> Contacts</h4>
+						<div class="mt-3 col-12 col-sm-6">
+							<label for="fName" class="form-label">First name <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+							<input type="text" class="form-control" id="fName" value="Annette" required>
+						</div>
+						<div class="mt-3 col-12 col-sm-6">
+							<label for="sName" class="form-label">Second name <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+							<input type="text" class="form-control" id="sName" value="Black" required>
+						</div>
+						<div class="mt-3 col-12 col-sm-6">
+							<label for="email" class="form-label">Email <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+							<input type="email" class="form-control" id="email" value="annette_black@email.com" required>
+						</div>
+						<div class="mt-3 col-12 col-sm-6">
+							<label for="number" class="form-label">Phone number <i class="fa-regular fa-asterisk fs-16 color-red"></i></label>
+							<input type="tel" class="form-control" id="number" value="3025550107" required>
+						</div>
+						<div class="mt-3 col-12">
+							<label for="company" class="form-label">Company</label>
+							<input type="text" class="form-control" id="company" placeholder="Enter company name">
+						</div>
+					</div>
+					<!-- Buttons -->
+					<div class="d-flex justify-content-between mt-5">
+						<a href="#" class="btn-2"><i class="fa-regular fa-eye me-1"></i> Preview</a>
+						<a href="#" class="btn">Save and continue</a>
+					</div>
+				</div>
+
+				<!-- Vendor Right Col -->
+				<aside class="col-lg-3 d-none d-lg-block mt-4 mt-md-0">
+					<div class="pt-5">
+						<h5 class="pt-5 mt-3">65% content filled</h5>
+					<div class="progress">
+						<div class="progress-bar bg-gold" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<ul class="list-unstyled mt-4">
+					  	<li class="mt-1"><a href="#basic-info"><i class="fa-solid fa-check me-2 color-red"></i> Basic info</a></li>
+						<li class="mt-1"><a href="#location"><i class="fa-solid fa-check me-2 color-red"></i> Location</a></li>
+						<li class="mt-1"><a href="#property-details"><i class="fa-solid fa-check me-2 color-red"></i> Property details</a></li>
+						<li class="mt-1"><a href="#price"><i class="fa-solid fa-check me-2"></i> Price</a></li>
+						<li class="mt-1"><a href="#photos-or-video"><i class="fa-solid fa-check me-2"></i> Photos / video</a></li>
+						<li class="mt-1"><a href="#contact"><i class="fa-solid fa-check me-2 color-red"></i> Contacts</a></li>
+					</ul>
+					</div>
+				</aside> 
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ====== Footer ====== -->
+	<footer class="mt-50 bg-light-white overflow-hidden">
+		<div class="container">
+			<!-- Footer row 1 -->
+			<div class="row pt-50 mb-6">
+				<div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-between mt-lg-4">
+					<div class="d-flex flex-column">
+						<a href="index.html"><img src="./images/logo-dark.svg" class="img-fluid" style="width: 120px;"></a>
+						<ul class="nav flex-column my-4">
+							<li class="nav-item"><a href="mailto:example@email.com" class="nav-link"><i class="fa-solid fa-envelope"></i> example@email.com</a></li>
+							<li class="nav-item"><a href="tel:4065550120" class="nav-link"><i class="fa-solid fa-mobile-screen-button"></i> (406) 555-0120</a></li>
+						</ul>
+						<div class="footer-icon">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="#"><i class="fa-brands fa-telegram"></i></a>
+						</div>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">Quick Links</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Buy a property</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Sell a property</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link">Rent a property</a></li>
+							<li class="nav-item"><a href="single_property_v.1.html" class="nav-link">Single property</a></li>
+							<li class="nav-item"><a href="personal_info.html" class="nav-link">Personal Info</a></li>
+							<li class="nav-item"><a href="my_properties.html" class="nav-link">My Properties</a></li>
+						</ul>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">About</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+							<li class="nav-item"><a href="help_center.html" class="nav-link">Help & support</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-5 offset-xl-1 mt-4 mt-lg-0 footer-right-col mt-lg-4">
+					<div class="d-flex flex-column">
+						<h2 class="h5">Recent Posts</h2>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th01.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">HOME IMPROVEMENT</h5>
+								<h2 class="h6"><a href="blog.html">Your Guide to a Smart Apartment Searching</a></h2>
+								<p class="fs-14 mb-2">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Dec 4</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> 2 comments</a></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th02.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">TIPS & ADVICE</h5>
+								<h2 class="h6"><a href="blog.html">Top 10 Ways to Refresh Your Space</a></h2>
+								<p class="fs-14 mb-2">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Nov 14</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> No comments</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 0rem -200px">
+			<!-- Footer row 2 -->
+			<div class="row text-center">
+				<p class="mt-6 mb-6">&copy; All rights reserved. Made by <span class="color-light-white fw-700">Rohit Saini</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ======= Scroll back to Top ======= -->
+	<div id="scrollUp" class="scrollActive d-flex align-items-center">
+		<span class="me-1 fs-14">Top</span>
+		<a href="#home"><i class="fa-solid fa-chevron-up color-white"></i></a>
+	</div>
+
+</main>
+
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<!-- Slick Slider JS -->
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+</body>
+</html>

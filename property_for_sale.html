@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font-awesome Icons -->
+	<link rel="stylesheet" href="./fontawesome-free/css/all.css">
+
+	<!-- jQuery UI CSS (for Price range slider) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/price_range_style.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<title>Real Estate</title>
+
+</head>
+<body>
+
+<main>
+	<!-- ======= Navigation Bar ====== -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="./images/logo-dark.svg" class="img-fluid">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon mx-3"><i class="fa-solid fa-bars-staggered"></i></span>
+		      <a class="btn" type="submit">Add</a>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Catalog
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="property_for_rent.html">Property for Rent</a></li>
+		            <li><a class="dropdown-item" href="property_for_sale.html">Property for Sale</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.1.html">Single Property v.1</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.2.html">Single Property v.2</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Account
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="personal_info.html">Personal Info</a></li>
+		            <li><a class="dropdown-item" href="password_and_security.html">Password & Security</a></li>
+		            <li><a class="dropdown-item" href="my_properties.html">My Properties</a></li>
+		            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+		            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+		            <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+		            <li><a class="dropdown-item" href="sign_in.html">Sign In</a></li>
+		            <li><a class="dropdown-item" href="sign_up.html">Sign Up</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Vendor
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="add_property.html">Add Property</a></li>
+		            <li><a class="dropdown-item" href="property_promotion.html">Property Promotion</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_properties.html">Vendor Page: Properties</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_reviews.html">Vendor Page: Reviews</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Pages
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="about.html">About</a></li>
+		            <li class="nested-dropdown">
+		            	<a class="dropdown-item nested-dropdown-item dropdown-toggle" href="#">Blog</a>
+						 <ul class="dropdown-menu nested-dropdown-menu">
+							<li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+		            		<li><a class="dropdown-item" href="single_post.html">Single Post</a></li>
+						</ul>
+		            </li>
+		            <li><a class="dropdown-item" href="contacts.html">Contact</a></li>
+		            <li><a class="dropdown-item" href="help_center.html">Help Center</a></li>
+		            <li><a class="dropdown-item" href="404_not_found.html">404 Not Found</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <div class="sign-in-button">
+		      	<a href="sign_in.html" class="color-red d-flex align-items-center"><i class="fa-regular fa-user me-2"></i> Sign in</a>
+		      </div>
+		      <div>
+		        <a href="add_property.html" class="btn"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<!-- ======= Property for sale ===== -->
+	<section class="property_container overflow-hidden">
+		<div class="container-fluid">
+			<div class="row g-5 mt-0">
+				<!-- Left column -->
+				<div class="col-lg-4 col-xl-3 mt-1 property-left-col">
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+					    <div class="offcanvas-header d-flex d-lg-none">
+					    	<h5 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h5>
+					    	<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					    </div>
+					    <div class="offcanvas-body">
+							<!-- btn (rent & sale) -->
+							<div class="rent_sale_btn">
+								<a class="btn-2"><i class="fa-solid fa-house"></i> For sale</a>
+								<a href="property_for_rent.html" class="btn-2 ms-2"><i class="fa-solid fa-house"></i> For rent</a>
+							</div>
+							<hr>
+							<!-- Location -->
+							<div class="mt-4">
+								<h2 class="h5 color-light-white mb-3">Location</h2>
+								<form>
+									<select class="form-select mb-2 color-light-white">
+									  <option disabled>Choose city</option>
+									  <option value="1">Chicago</option>
+									  <option value="2">Dallas</option>
+									  <option value="3">Los Angeles</option>
+									  <option value="4" selected>New York</option>
+									  <option value="5">San Diego</option>
+									</select>
+								</form>
+								<form>
+									<select class="form-select mb-3">
+									  <option disabled selected>Choose district</option>
+									  <option value="1">Brooklyn</option>
+									  <option value="2">Manhattan</option>
+									  <option value="3">Staten Island</option>
+									  <option value="4">The Bronx</option>
+									  <option value="5">Queens</option>
+									</select>
+								</form>
+							</div>
+							<!-- Property type -->
+							<div class="mt-4">
+								<h2 class="h5 color-light-white mb-3">Property type</h2>
+								<form class="overflow-auto" style="height: 152px;">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="House">
+									  <label class="form-check-label" for="House">House</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Apartment" checked>
+									  <label class="form-check-label" for="Apartment">Apartment</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Room">
+									  <label class="form-check-label" for="Room">Room</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Office">
+									  <label class="form-check-label" for="Office">Office</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Land">
+									  <label class="form-check-label" for="Land">Land</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Commercial">
+									  <label class="form-check-label" for="Commercial">Commercial</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Daily_rental">
+									  <label class="form-check-label" for="Daily_rental">Daily rental</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="New_building">
+									  <label class="form-check-label" for="New_building">New building</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Parking_lot">
+									  <label class="form-check-label" for="Parking_lot">Parking lot</label>
+									</div>
+								</form>
+							</div>
+							<!-- Price per month -->
+							<div class="price-range-block mt-4 m-0">
+								<h2 class="h5 color-light-white mb-4">Price per month</h2>
+								<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+								<div class="d-flex align-items-center" style="margin:30px auto">
+									<input class="form-control" type="number" min="200" max="5000" oninput="validity.valid||(value='200');" id="min_price" class="price-range-field">
+									<div class="mx-2">—</div>
+								    <input class="form-control" type="number" min="200" max="5000" oninput="validity.valid||(value='5000');" id="max_price" class="price-range-field">
+								</div>
+							</div>
+							<!-- Beds & baths -->
+							<div class="beds-baths mt-4">
+								<h2 class="h5 color-light-white mb-3">Beds & baths</h2>
+								<label>Bedrooms</label>
+								<ul class="nav flex-row mt-1">
+									<li class="nav-item"><a href="#" class="nav-link">Studio</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">1</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">2</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">3</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">4+</a></li>
+								</ul>
+								<label class="mt-2">Bathrooms</label>
+								<ul class="nav flex-row mt-1">
+									<li class="nav-item"><a href="#" class="nav-link">1</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">2</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">3</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">4</a></li>
+								</ul>
+							</div>
+							<!-- Square metres -->
+							<div class="mt-4">
+								<h2 class="h5 color-light-white mb-3">Square metres</h2>
+								<div class="d-flex align-items-center">
+									<input class="form-control" type="number" min="20" max="500" step="10" placeholder="Min">
+									<div class="mx-2">—</div>
+								  <input class="form-control" type="number" min="20" max="500" step="10" placeholder="Max">
+								</div>
+							</div>
+							<!-- Amenities -->
+							<div class="mt-4">
+								<h2 class="h5 color-light-white mb-3">Amenities</h2>
+								<form class="overflow-auto" style="height: 152px;">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Air" checked>
+									  <label class="form-check-label" for="Air">Air conditioning</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Balcony">
+									  <label class="form-check-label" for="Balcony">Balcony</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Garage" checked>
+									  <label class="form-check-label" for="Garage">Garage</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Gym">
+									  <label class="form-check-label" for="Gym">Gym</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Parking">
+									  <label class="form-check-label" for="Parking">Parking</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Pool">
+									  <label class="form-check-label" for="Pool">Pool</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Security">
+									  <label class="form-check-label" for="Security">Security cameras</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="WiFi" checked>
+									  <label class="form-check-label" for="WiFi">WiFi</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Laundry">
+									  <label class="form-check-label" for="Laundry">Laundry</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Dishwasher">
+									  <label class="form-check-label" for="Dishwasher">Dishwasher</label>
+									</div>
+								</form>
+							</div>
+							<!-- Pets -->
+							<div class="mt-4">
+								<h2 class="h5 color-light-white mb-3">Pets</h2>
+								<form>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Cats">
+									  <label class="form-check-label" for="Cats">Cats allowed</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Dogs">
+									  <label class="form-check-label" for="Dogs">Dogs allowed</label>
+									</div>
+								</form>
+							</div>
+							<!-- Additional options -->
+							<div class="mt-4 mb-4">
+								<h2 class="h5 color-light-white mb-3">Additional options</h2>
+								<form>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Verified">
+									  <label class="form-check-label" for="Verified">Verified</label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="Featured">
+									  <label class="form-check-label" for="Featured">Featured</label>
+									</div>
+								</form>
+							</div>
+							<hr>
+							<a href="#" class="btn-2 mt-3"><i class="fa-solid fa-arrow-rotate-right me-1"></i> Reset Filters</a>
+						</div>
+				    </div>
+				</div>
+
+				<!-- Right column -->
+				<div class="col-12 col-lg-8 col-xl-9 mt-4 mb-5">
+					<!-- Breadcrumb -->
+					<div class="breadcrumb">
+						<ul class="nav">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a class="nav-link">Property for sale</a></li>
+						</ul>
+					</div>
+					<!-- Heading row -->
+					<div class="row align-items-center mb-3">
+						<div class="col-12">
+							<h2 class="h3">Property for sale</h2>
+						</div>
+					</div>
+					<!-- Sort-by row -->
+					<div class="my-4 d-flex justify-content-between align-items-center">
+						<form class="d-flex align-items-center flex-shrink-0">
+							<label for="Sort_by" class="fs-14" style="width:150px;"><i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i> Sort by:</label>
+							<select class="form-select color-light-white" id="Sort_by">
+							  <option disabled>Choose city</option>
+							  <option value="1">Chicago</option>
+							  <option value="2">Dallas</option>
+							  <option value="3">Los Angeles</option>
+							  <option value="4" selected>New York</option>
+							  <option value="5">San Diego</option>
+							</select>
+						</form>
+						<hr class="mx-4 d-none d-sm-block w-100">
+						<span class="fs-14 d-none d-sm-block flex-shrink-0"><i class="fa-regular fa-circle-check"></i> 116 results</span>
+					</div>
+					<!-- Cards -->
+					<div class="row g-4 pb-32 border-bottom">
+						<!-- Card 1 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/01.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 2 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/02.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 3 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/03.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 4 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/04.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 5 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/05.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 6 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/01.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 7 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/02.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 8 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/03.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 9 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/04.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 10 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/05.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 11 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/01.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+						<!-- Card 12 -->
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card">
+								<div>
+									<a href="single_property_v.1.html"><img src="./images/02.jpg" class="card-img-top" alt="Offers Card Image"></a>
+									<div class="position-absolute strat-0 top-0 mt-3 ms-3">
+										<span class="box bg-green">Verified</span>
+										<span class="box bg-blue">New</span>
+									</div>
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<span class="card-hover-icon"><i class="fa-solid fa-heart color-red"></i></span>
+									</div>
+									<div class="card-body p-3 p-0">
+										<h5 class="color-red">FOR SALE</h5>
+										<a href="single_property_v.1.html"><h2 class="h6 card-title">3-bed Apartment | 67 sq.m</h2></a>
+										<p class="card-text fs-14 mb-2">6811 Ditmars Blvd Astoria, NY 11177</p>
+										<span><i class="ti-image"></i> $1,628</span>
+									</div>
+								</div>
+								<hr>
+								<div class="card-footer text-center">
+		    						<span>3 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/car.png" style="width: 20px;"></span>
+		    						<span>2 <img src="./images/icons/bed.png" style="width: 20px;"></span>
+		  						</div>
+							</div>
+						</div>
+					</div>
+					<!-- Pagination -->
+					<div class="row justify-content-end mt-4">
+						<div class="col-12">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+								    <li class="page-item"><a class="page-link pagination-active" href="#">1</a></li>
+								    <li class="page-item"><a class="page-link" href="#">2</a></li>
+								    <li class="page-item"><a class="page-link" href="#">3</a></li>
+								    <li class="page-item"><a class="page-link" href="#">...</a></li>
+								    <li class="page-item"><a class="page-link" href="#">8</a></li>
+								    <li class="page-item">
+								      <a class="page-link" href="#" aria-label="Next">
+								        <i class="fa-solid fa-angle-right"></i>
+								      </a>
+								    </li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<!-- ====== Footer ====== -->
+	<footer class="bg-light-white overflow-hidden">
+		<div class="container">
+			<!-- Footer row 1 -->
+			<div class="row pt-50 mb-6">
+				<div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-between mt-lg-4">
+					<div class="d-flex flex-column">
+						<a href="index.html"><img src="./images/logo-dark.svg" class="img-fluid" style="width: 120px;"></a>
+						<ul class="nav flex-column my-4">
+							<li class="nav-item"><a href="mailto:example@email.com" class="nav-link"><i class="fa-solid fa-envelope"></i> example@email.com</a></li>
+							<li class="nav-item"><a href="tel:4065550120" class="nav-link"><i class="fa-solid fa-mobile-screen-button"></i> (406) 555-0120</a></li>
+						</ul>
+						<div class="footer-icon">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="#"><i class="fa-brands fa-telegram"></i></a>
+						</div>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">Quick Links</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Buy a property</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Sell a property</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link">Rent a property</a></li>
+							<li class="nav-item"><a href="single_property_v.1.html" class="nav-link">Single property</a></li>
+							<li class="nav-item"><a href="personal_info.html" class="nav-link">Personal Info</a></li>
+							<li class="nav-item"><a href="my_properties.html" class="nav-link">My Properties</a></li>
+						</ul>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">About</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+							<li class="nav-item"><a href="help_center.html" class="nav-link">Help & support</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-5 offset-xl-1 mt-4 mt-lg-0 footer-right-col mt-lg-4">
+					<div class="d-flex flex-column">
+						<h2 class="h5">Recent Posts</h2>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th01.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">HOME IMPROVEMENT</h5>
+								<h2 class="h6"><a href="blog.html">Your Guide to a Smart Apartment Searching</a></h2>
+								<p class="fs-14 mb-2">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Dec 4</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> 2 comments</a></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th02.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">TIPS & ADVICE</h5>
+								<h2 class="h6"><a href="blog.html">Top 10 Ways to Refresh Your Space</a></h2>
+								<p class="fs-14 mb-2">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Nov 14</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> No comments</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 0rem -200px">
+			<!-- Footer row 2 -->
+			<div class="row text-center mb-5 mb-lg-0">
+				<p class="mt-6">&copy; All rights reserved. Made by <span class="color-light-white fw-700">Rohit Saini</span></p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- ======= Filter Button ======= -->
+	<div id="filters">
+		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filters</button>
+	</div>
+
+	<!-- ======= Scroll back to Top ======= -->
+	<div id="scrollUp" class="scrollActive d-flex align-items-center" style="bottom: 10%;">
+		<span class="me-1 fs-14">Top</span>
+		<a href="#home"><i class="fa-solid fa-chevron-up color-white"></i></a>
+	</div>
+	
+</main>
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<!-- jQuery UI JS CDN  (for Price range slider) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+
+	<!-- Slick Slider JS -->
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Price range JS -->
+	<script src="./js/price_range_script.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+</body>
+</html>

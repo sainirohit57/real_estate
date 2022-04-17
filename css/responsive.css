@@ -1,0 +1,183 @@
+@media(min-width: 1920px) {   
+ 
+}
+@media(min-width: 1600px) and (max-width: 1900px) {   
+    
+}
+@media(min-width: 1440px) and (max-width: 1600px) {   
+  
+}
+@media(max-width: 1400px) { 
+    
+}
+
+@media(max-width: 992px) {
+/* ===================== Index Page Responsive CSS ============================= */
+
+    /* ===== Navigation Bar ====== */
+    header .navbar-nav .nav-item{
+        border: 1px solid #dbdbdb; 
+        border-radius: 6px; 
+        margin-top: 5px;
+    }
+    header .navbar-nav .nav-item .nav-link{
+        width: 100%; 
+        justify-content: space-between; 
+        display: flex; 
+        align-items: center; 
+        padding: 10px 20px; 
+    }
+    header .navbar-nav .nav-item .dropdown-menu{
+        position: static;
+        border: none;
+        box-shadow: none;
+        border-left: 1px solid #bfb6b6;
+        border-radius: 0;
+        padding: 0;
+        margin: 0 0 10px 20px;
+        display: none;
+    }
+    header .navbar-nav .nav-item:hover .dropdown-menu{
+        display: block;
+    }
+    .sign-in-button a{
+            border: 1px solid #d5cdcd;
+        border-radius: 6px;
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        padding: 10px 20px;
+        color: #454056;
+    }
+    header nav .navbar-nav ~ div .btn{
+        display: none;
+    }
+    header .navbar-nav .nav-item .dropdown-menu .nested-dropdown .dropdown-menu{
+        opacity: 1 !important;  
+        visibility: visible; !important;
+    }
+    header .navbar-nav .nav-item .dropdown-menu .nested-dropdown .dropdown-toggle::after {
+        display: none;
+    }
+
+    /* Account page navbar */
+    header .nav-img-logo{
+        padding: 7px 20px !important;
+    }
+    header .nav-img-logo img{
+        width: 30px !important;
+    }
+    header .nav-img-logo:after{
+        display: block;
+    }
+
+    /* ======= Banner Section ====== */
+    .banner-section .banner-content {
+        top: 15%;
+        width: 58%;
+    }
+
+    /* ====== Recently Added Section ===== */
+    .recently-added .view-text{
+        display: none;
+    }
+
+    /* ======= Sign In Page ====== */
+    .sign-in-page .row, .sign-up-page .row{
+        width: 100%;
+    }
+
+    /* ======= Vendor - Add property Page ====== */
+    .add-property{
+        overflow-x: hidden;
+    }
+
+    /* Offcanvas (Property for rent) */
+    .offcanvas{
+        position: fixed;
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+    /* Filters */
+    #filters{
+        display: block;
+    }
+}
+
+@media (max-width: 767px){
+    /* ======= Banner Section ====== */
+    .banner-section .banner-content {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ===== Services Section ====== */
+    .services{
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    /* ====== Recently Added Section ===== */
+    .recently-added .view-text{
+        display: block;
+    }
+    .recently-added .nav-tabs{
+        display: none;
+    }
+
+    /* ====== Footer ====== */
+    footer .footer-row-2{
+        text-align: center;
+    }
+    footer .footer-row-2 img {
+        margin: 0 auto;
+    }
+
+    /* ======= Sign In Page ====== */
+    .sign-in-page .border-left, .sign-up-page .border-left{
+        border-left: none;
+    }
+    
+}
+
+@media(max-width: 575px) {
+    /* ====== Recently Added Section ===== */
+   .content-box-body {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    /* ====== Footer ====== */
+    footer .footer-right-col img{
+        display: none;
+    }
+
+    /* My Property Page ------------- */
+    .personal-info img[src="images/02.jpg"], .personal-info img[src="images/03.jpg"], .personal-info img[src="images/05.jpg"], .personal-info img[src="images/19.jpg"]{
+        width: 100%!important;
+    }
+    .personal-info .card img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    /* Map view */
+    .view-text {
+        justify-content: start;
+        margin-top: 14px;
+    }
+
+    /* Vendor page reviews */
+    .vendor-page-reviews .btn-2{
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 375px) {
+    
+}
+
+@media(max-width: 330px) {
+    
+}

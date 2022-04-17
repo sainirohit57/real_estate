@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font-awesome Icons -->
+	<link rel="stylesheet" href="./fontawesome-free/css/all.css">
+
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<title>Real Estate</title>
+
+</head>
+<body>
+
+<main>
+	<!-- ======= Navigation Bar ====== -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="./images/logo-dark.svg" class="img-fluid">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon mx-3"><i class="fa-solid fa-bars-staggered"></i></span>
+		      <a class="btn" type="submit">Add</a>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Catalog
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="property_for_rent.html">Property for Rent</a></li>
+		            <li><a class="dropdown-item" href="property_for_sale.html">Property for Sale</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.1.html">Single Property v.1</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.2.html">Single Property v.2</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Account
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="personal_info.html">Personal Info</a></li>
+		            <li><a class="dropdown-item" href="password_and_security.html">Password & Security</a></li>
+		            <li><a class="dropdown-item" href="my_properties.html">My Properties</a></li>
+		            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+		            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+		            <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+		            <li><a class="dropdown-item" href="sign_in.html">Sign In</a></li>
+		            <li><a class="dropdown-item" href="sign_up.html">Sign Up</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Vendor
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="add_property.html">Add Property</a></li>
+		            <li><a class="dropdown-item" href="property_promotion.html">Property Promotion</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_properties.html">Vendor Page: Properties</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_reviews.html">Vendor Page: Reviews</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Pages
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="about.html">About</a></li>
+		            <li class="nested-dropdown">
+		            	<a class="dropdown-item nested-dropdown-item dropdown-toggle" href="#">Blog</a>
+						 <ul class="dropdown-menu nested-dropdown-menu">
+							<li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+		            		<li><a class="dropdown-item" href="single_post.html">Single Post</a></li>
+						</ul>
+		            </li>
+		            <li><a class="dropdown-item" href="contacts.html">Contact</a></li>
+		            <li><a class="dropdown-item" href="help_center.html">Help Center</a></li>
+		            <li><a class="dropdown-item" href="404_not_found.html">404 Not Found</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <div class="sign-in-button">
+		      	<a href="sign_in.html" class="color-red d-flex align-items-center"><i class="fa-regular fa-user me-2"></i> Sign in</a>
+		      </div>
+		      <div>
+		        <a href="add_property.html" class="btn"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<!-- ======= Single Blog Banner Section ====== -->
+	<section class="blog-banner mt-3">
+		<div class="container">
+			<!-- Single Blog Banner Heading row -->
+			<div class="row">
+				<div class="col-12">	
+				    <!-- Breadcrumb -->
+					<div class="breadcrumb mb-2">
+						<ul class="nav">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+							<li class="nav-item d-flex align-items-baseline"><a class="nav-link">How Real Estate Drone Photography Can Elevate Your Listing?</a></li>
+						</ul>
+					</div>
+					<!-- Heading -->
+					<div class="mb-3">
+						<p class="fs-18 mt-4">TIPS & ADVICE</p>
+						<h2 class="h2">How Real Estate Drone Photography Can Elevate Your Listing?</h2>
+						<div class="d-flex justify-content-between align-items-center mt-3">
+							<ul class="d-flex list-unstyled flex-wrap">
+								<li class="me-3 pe-3 border-right">
+									<i class="fa-regular fa-calendar"></i>
+									<span>Mar 18</span>
+								</li>
+								<li class="me-3 pe-3 border-right">
+									<i class="fa-regular fa-clock"></i>
+									<span>4 min read</span>
+								</li>
+								<li class="me-3">
+									<a href="#">
+										<i class="fa-regular fa-comment color-cream"></i>
+										<span class="color-cream">comments</span>
+									</a>
+								</li>
+							</ul>
+  						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<img src="./images/single.jpg" class="round">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =======  Single Blog Data Section ====== -->
+	<section class="pt-32">
+		<div class="container">
+			<div class="row">
+				<!-- Left col -->
+				<div class="col-2 d-none d-md-block" style="padding-top: 105px;">
+					<div class="card-icon mt-3 d-flex flex-column align-items-center" style="position: sticky;top: 20%;">
+						<a href="#" class="mb-2" tabindex="0"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#" class="mb-2" tabindex="0"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#" class="mb-2" tabindex="0"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+				<!-- Right col -->
+				<div class="col-12 col-md-10">
+					<div class="d-flex d-md-none align-items-center mb-6">
+						<span class="fw-700 me-3">Share:</span>
+						<div class="card-icon">
+							<a href="#" tabindex="0"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#" class="mx-2" tabindex="0"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#" tabindex="0"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+					<div class="mt-2 mb-6">
+						<a href="single_post.html" class="d-flex align-items-center">
+							<img src="./images/10.jpg" class="rounded-circle" style="width: 80px; height: fit-content;">
+							<div class="d-flex flex-column ms-3">
+								<h3 class="h6 mb-2 color-light-white">Kristin Watson</h3>
+								<p class="m-0 text-muted fs-14">Imperial Property Group Agent</p>
+							</div>
+						</a>
+  					</div>
+  					<div class="mb-6">
+  						<h4 class="fs-18 lh-25 mb-3">Feugiat eget gravida urna placerat posuere pulvinar. Id nibh hendrerit semper urna consequat. Mauris elit tellus risus ultricies ut consequat. Tempor tellus imperdiet nec velit fames pellentesque sed sed arcu. Neque quam id pellentesque in diam in.</h4>
+  						<p class="lh-25">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+  						<p class="lh-25">Convallis massa nunc, tempus eget egestas sollicitudin mauris. Purus donec sed neque arcu, dictumst tortor nisi, odio. A sit lectus sem velit orci, rhoncus pharetra facilisis. Cras sodales a, dui pellentesque enim odio rutrum leo. Auctor viverra sit sit ut. Massa, elit venenatis, ultrices viverra at sagittis, velit. Cursus tempus phasellus consectetur suspendisse a blandit pellentesque diam neque. Massa est nibh congue elit amet, diam faucibus. Morbi non est semper ullamcorper quam iaculis at.</p>
+  					</div>
+  					<div class="mb-5">
+  						<div class="blockquote">
+							<i class="fa-solid fa-quote-right"></i>
+						</div>
+						<h4 class="fs-18 lh-25 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+						<h5 class="fs-16 mb-4">— Annette Black</h5>
+						<p class="lh-25">Praesent sed pulvinar posuere nisl tincidunt. Iaculis sit quam magna congue. Amet vel non aliquet habitasse. Egestas erat odio et, eleifend turpis etiam blandit interdum. Nec augue ut senectus quisque diam quis. At augue accumsan, in bibendum. A eget et, eget quisque egestas netus vel. Velit, aliquet turpis convallis ullamcorper. Scelerisque sagittis condimentum pretium in vitae etiam lacinia quis amet. Porttitor consequat, sollicitudin vivamus pharetra nibh faucibus neque, viverra. Praesent amet sed lacus vitae.</p>
+						<p class="lh-25">Velit parturient tellus tellus, congue pulvinar tellus viverra. In cum massa mattis ac. Amet vitae massa ut mi etiam. Auctor aliquam tristique felis donec eu sit nisi. Accumsan mauris eget convallis mattis sed etiam scelerisque.</p>
+  					</div>
+  					<hr>
+  					<!-- Tags -->
+  					<div class="col-12 tags mt-4">
+						<div class="d-flex align-items-baseline">
+							<h5 class="color-light-white fs-16 me-3">Tags:</h5>
+							<div class="d-flex overflow-auto w-100 mt-2 mt-lg-0 pb-2 pb-lg-0">
+								<a href="#!">Tutorial</a>
+								<a href="#!">Jobs</a>
+								<a href="#!">Business</a>
+							</div>
+						</div>
+					</div>
+					<!-- Comments -->
+					<div class="pt-70 single-post-comment">
+						<h4>3 comments</h4>
+						<!-- Review-1 -->
+						<div class="mt-4 mb-4 border-bottom">
+							<div>
+								<p class="mt-3">Elementum ut quam tincidunt egestas vitae elit, hendrerit. Ullamcorper nulla amet lobortis elit, nibh condimentum enim. Aliquam felis nisl tellus sodales lectus dictum tristique proin vitae. Odio fermentum viverra tortor quis.</p>
+								<div class="d-flex justify-content-between">
+									<div class="d-flex align-items-center">
+										<img src="./images/11.jpg" class="rounded-circle" style="width: 50px; height: fit-content;">
+										<div class="d-flex flex-column ms-3 mt-0">
+											<h3 class="h6 mb-1">Floyd Miles</h3>
+											<p class="m-0 text-muted fs-14">3 days ago</p>
+										</div>
+									</div>
+									<div><a href="#" class="fs-14"><i class="fa-solid fa-reply"></i> Reply</a></div>
+								</div>
+							</div>
+							<div class="replyed-comment">
+								<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+								<div class="d-flex justify-content-between">
+									<div class="d-flex align-items-center">
+										<img src="./images/10.jpg" class="rounded-circle" style="width: 50px; height: fit-content;">
+										<div class="d-flex flex-column ms-3 mt-0">
+											<h3 class="h6 mb-1">Kristin Watsons <span class="author">Author</span></h3>
+											<p class="m-0 text-muted fs-14">2 days ago</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Review-2 -->
+						<div class="mt-4">
+							<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex align-items-center">
+									<img src="./images/12.jpg" class="rounded-circle" style="width: 50px; height: fit-content;">
+									<div class="d-flex flex-column ms-3 mt-0">
+										<h3 class="h6 mb-1">Darrel Steward</h3>
+										<p class="m-0 text-muted fs-14">1 week ago</p>
+									</div>
+								</div>
+								<div><a href="#" class="fs-14"><i class="fa-solid fa-reply"></i> Reply</a></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ======= Single Blog Form ====== -->
+	<section class="pt-70">
+		<div class="container">
+			<div class="row justify-content-center box-shadow round px-2 py-5 mx-2">
+				<div class="col-md-10">
+					<h4 class="fs-28 mb-4">Leave your comment</h4>
+					<form>
+						<div class="row">
+							<div class="col-sm-6 mb-4">
+								<label for="fName" class="form-label">Name</label>
+								<input type="text" class="form-control" id="fName" placeholder="Enter your name" required="">
+							</div>
+							<div class="col-sm-6 mb-4">
+								<label for="Email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="Email" placeholder="Enter your email" required="">
+							</div>
+							<div class="col-12 mb-4">
+								<label for="Message" class="form-label">Comment</label>
+								<textarea cols="10" rows="5" placeholder="Type comment here" id="Message" style="width: 100%;" required=""></textarea>
+							</div>
+							<div class="col-12">
+								<button class="btn fs-16" type="submit" style="padding: 12px 24px; width: fit-content;">Post comment</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>	
+		</div>
+	</section>
+	
+	<!-- ====== Footer ====== -->
+	<footer class="bg-light-white overflow-hidden" style="margin-top: 70px;">
+		<div class="container">
+			<!-- Footer row 1 -->
+			<div class="row pt-50 mb-6">
+				<div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-between mt-lg-4">
+					<div class="d-flex flex-column">
+						<a href="index.html"><img src="./images/logo-dark.svg" class="img-fluid" style="width: 120px;"></a>
+						<ul class="nav flex-column my-4">
+							<li class="nav-item"><a href="mailto:example@email.com" class="nav-link"><i class="fa-solid fa-envelope"></i> example@email.com</a></li>
+							<li class="nav-item"><a href="tel:4065550120" class="nav-link"><i class="fa-solid fa-mobile-screen-button"></i> (406) 555-0120</a></li>
+						</ul>
+						<div class="footer-icon">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="#"><i class="fa-brands fa-telegram"></i></a>
+						</div>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">Quick Links</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Buy a property</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Sell a property</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link">Rent a property</a></li>
+							<li class="nav-item"><a href="single_property_v.1.html" class="nav-link">Single property</a></li>
+							<li class="nav-item"><a href="personal_info.html" class="nav-link">Personal Info</a></li>
+							<li class="nav-item"><a href="my_properties.html" class="nav-link">My Properties</a></li>
+						</ul>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">About</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+							<li class="nav-item"><a href="help_center.html" class="nav-link">Help & support</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-5 offset-xl-1 mt-4 mt-lg-0 footer-right-col mt-lg-4">
+					<div class="d-flex flex-column">
+						<h2 class="h5">Recent Posts</h2>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th01.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">HOME IMPROVEMENT</h5>
+								<h2 class="h6"><a href="blog.html">Your Guide to a Smart Apartment Searching</a></h2>
+								<p class="fs-14 mb-2">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Dec 4</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> 2 comments</a></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th02.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">TIPS & ADVICE</h5>
+								<h2 class="h6"><a href="blog.html">Top 10 Ways to Refresh Your Space</a></h2>
+								<p class="fs-14 mb-2">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Nov 14</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> No comments</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 0rem -200px">
+			<!-- Footer row 2 -->
+			<div class="row text-center">
+				<p class="mt-6 mb-6">&copy; All rights reserved. Made by <span class="color-light-white fw-700">Rohit Saini</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ======= Scroll back to Top ======= -->
+	<div id="scrollUp" class="scrollActive d-flex align-items-center">
+		<span class="me-1 fs-14">Top</span>
+		<a href="#home"><i class="fa-solid fa-chevron-up color-white"></i></a>
+	</div>
+
+</main>
+
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Slick Slider JS -->
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+</body>
+</html>

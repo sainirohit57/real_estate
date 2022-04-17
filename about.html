@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font-awesome Icons -->
+	<link rel="stylesheet" href="./fontawesome-free/css/all.css">
+
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<title>Real Estate</title>
+
+</head>
+<body>
+
+<main>
+	<!-- ======= Navigation Bar ====== -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="./images/logo-dark.svg" class="img-fluid">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon mx-3"><i class="fa-solid fa-bars-staggered"></i></span>
+		      <a class="btn" type="submit">Add</a>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Catalog
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="property_for_rent.html">Property for Rent</a></li>
+		            <li><a class="dropdown-item" href="property_for_sale.html">Property for Sale</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.1.html">Single Property v.1</a></li>
+		            <li><a class="dropdown-item" href="single_property_v.2.html">Single Property v.2</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Account
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="personal_info.html">Personal Info</a></li>
+		            <li><a class="dropdown-item" href="password_and_security.html">Password & Security</a></li>
+		            <li><a class="dropdown-item" href="my_properties.html">My Properties</a></li>
+		            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+		            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+		            <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+		            <li><a class="dropdown-item" href="sign_in.html">Sign In</a></li>
+		            <li><a class="dropdown-item" href="sign_up.html">Sign Up</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Vendor
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="add_property.html">Add Property</a></li>
+		            <li><a class="dropdown-item" href="property_promotion.html">Property Promotion</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_properties.html">Vendor Page: Properties</a></li>
+		            <li><a class="dropdown-item" href="vendor_page_reviews.html">Vendor Page: Reviews</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Pages
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="about.html">About</a></li>
+		            <li class="nested-dropdown">
+		            	<a class="dropdown-item nested-dropdown-item dropdown-toggle" href="#">Blog</a>
+						 <ul class="dropdown-menu nested-dropdown-menu">
+							<li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+		            		<li><a class="dropdown-item" href="single_post.html">Single Post</a></li>
+						</ul>
+		            </li>
+		            <li><a class="dropdown-item" href="contacts.html">Contact</a></li>
+		            <li><a class="dropdown-item" href="help_center.html">Help Center</a></li>
+		            <li><a class="dropdown-item" href="404_not_found.html">404 Not Found</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <div class="sign-in-button">
+		      	<a href="sign_in.html" class="color-red d-flex align-items-center"><i class="fa-regular fa-user me-2"></i> Sign in</a>
+		      </div>
+		      <div>
+		        <a href="add_property.html" class="btn"><i class="fa-solid fa-plus me-2"></i> Add Property</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<!-- ====== About Banner ======= -->
+	<section class="mt-4">
+		<div class="container">
+			<div class="row">
+				<!-- Breadcrumb -->
+				<div class="col-12">
+					<div class="breadcrumb">
+						<ul class="nav">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a class="nav-link">About</a></li>
+						</ul>
+					</div>
+				</div>
+				 <!-- About Banner Row -->
+				<div class="row justify-content-between">
+					<div class="col-lg-5 d-flex flex-column justify-content-center">
+						<h2>About Finder</h2>
+						<p class="py-4 fs-18 lh-27">We provide a complete service for the sale, purchase or rental of real estate. We have been operating more than 10 years. Search millions of apartments and houses on Finder.</p>
+						<a href="contacts.html" type="button" class="btn" style="width: fit-content; padding: 10px 22px;">Contact us</a>
+					</div>
+
+					<div class="col-lg-7">
+						<div class="image-slider">
+							<!-- Card 1 -->
+							<div class="card">
+								<img src="./images/05(3).jpg" class="card-img-top round" alt="Offers Card Image">
+							</div>
+							<!-- Card 2 -->
+							<div class="card">
+								<img src="./images/05.jpg" class="card-img-top round" alt="Offers Card Image">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== Services Section ===== -->
+	<section class="mt-50">
+		<div class="container">
+			<div class="row">
+				<h3 class="mb-4">Why choose us?</h3>
+				<div class="col-lg-4 px-2">
+					<i class="fa-solid fa-shield color-red fs-36"></i>
+					<h5 class="my-3">Safety is our priority</h5>
+					<p class="color-cream lh-25">Vel et aliquet diam vulputate hendrerit lorem eget amet adipiscing. At ut ut consectetur in sed massa arcu risus sed.</p>
+				</div>
+				<div class="col-lg-4 px-2">
+					<i class="fa-solid fa-dollar-sign color-red fs-36"></i>
+					<h5 class="my-3">Fair price</h5>
+					<p class="color-cream lh-25">Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui. Maecenas ultricies laoreet facilisis fusce amet, consequat neque.</p>
+				</div>
+				<div class="col-lg-4 px-2">
+					<i class="fa-solid fa-headphones color-red fs-36"></i>
+					<h5 class="my-3">Support 24/7</h5>
+					<p class="color-cream lh-25">Id velit, dui condimentum dictumst sapien quis a elementum dignissim. Dignissim ultrices scelerisque ultrices nisi.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== How it works ===== -->
+	<section class="mt-50 pt-lg-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="./images/find.svg">
+				</div>
+				<div class="col-lg-6">
+					<h3 class="mb-5">How it works</h3>
+					<div class="d-flex align-items-baseline mb-3">
+						<span class="number-icon">1</span>
+						<div class="ms-4">
+							<h5 class="mb-3">Choose your property</h5>
+							<p class="lh-25">Odio velit, massa augue etiam in parturient volutpat orci. Pulvinar amet, at est ac curabitur mauris, semper cursus metus. Imperdiet sed massa amet at turpis. Dis risus, donec in ac ultricies tempor eu, amet.</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-baseline mb-3">
+						<span class="number-icon">2</span>
+						<div class="ms-4">
+							<h5 class="mb-3">See the property directly</h5>
+							<p class="lh-25">Id orci senectus dignissim magna nec diam bibendum at. Morbi quis turpis nulla condimentum est elementum. Tristique in accumsan eget vestibulum volutpat pretium. Sed id elit duis turpis diam justo. Dignissim blandit rutrum venenatis.</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-baseline">
+						<span class="number-icon">3</span>
+						<div class="ms-4">
+							<h5 class="mb-3">Easy payment</h5>
+							<p class="lh-25">Ut mattis nascetur aliquam neque velit nunc sed. Morbi congue mauris amet ultrices molestie tellus proin odio diam. Feugiat elit, habitasse egestas egestas id nec potenti. Donec convallis donec tristique mattis et viverra.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== Team Section ===== -->
+	<section class="mt-50">
+		<div class="container">
+			<h3 class="mb-5">Meet our professional team</h3>
+			<div class="row">
+				<div class="about-slider">
+					<!-- Card 1 -->
+					<div class="card">
+						<img src="./images/20.jpg" class="card-img-top" alt="Cities Card Image">
+						<div class="card-body text-center p-3 p-0">
+							<h2 class="h5 card-title">Ronald Richards</h2>
+							<p class="fs-14">Sales Executive</p>
+							<div class="card-icon">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- Card 2 -->
+					<div class="card">
+						<img src="./images/21.jpg" class="card-img-top" alt="Cities Card Image">
+						<div class="card-body text-center p-3 p-0">
+							<h2 class="h5 card-title">Ronald Richards</h2>
+							<p class="fs-14">Sales Executive</p>
+							<div class="card-icon">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- Card 3 -->
+					<div class="card">
+						<img src="./images/22.jpg" class="card-img-top" alt="Cities Card Image">
+						<div class="card-body text-center p-3 p-0">
+							<h2 class="h5 card-title">Ronald Richards</h2>
+							<p class="fs-14">Sales Executive</p>
+							<div class="card-icon">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- Card 4 -->
+					<div class="card">
+						<img src="./images/23.jpg" class="card-img-top" alt="Cities Card Image">
+						<div class="card-body text-center p-3 p-0">
+							<h2 class="h5 card-title">Ronald Richards</h2>
+							<p class="fs-14">Sales Executive</p>
+							<div class="card-icon">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== Customers Section ===== -->
+	<section>
+		<div class="container pt-50">
+			<h3 class="mb-4 text-center">Hear from our customers</h3>
+			<div class="customers-slider pb-32">
+				<!-- Slider row 1 -->
+				<div class="row d-flex g-5 align-items-center">
+					<div class="col-lg-4 d-none d-lg-block">
+						<img src="./images/04.jpg" class="round">
+					</div>
+					<div class="col-lg-8 box-shadow round p-4 position-relative">
+						<p>Eu&nbsp;massa, pharetra massa integer. Sed molestie sollicitudin morbi ultrices. Odio is&nbsp;euismodtelle faucibus. Venenatis nunc, tristique turpis cras sodales. In&nbsp;dui, viverra et&nbsp;ac. Id&nbsp;justo, varius nunc, faucibus erat proin elit. Amet diam, aliquet nec quis&nbsp;vel. Donec ut&nbsp;quisque in&nbsp;lorem sapien.</p>
+						<div class="d-flex align-items-center">
+							<img src="./images/elastic-lg.png" style="width: 50px; height: 50px;">
+							<span class="ms-3">
+								<h5 class="fs-16 mb-1">Elastic Inc.</h5>
+								<p class="fs-14 m-0">Guy Hawkins, Senior HR</p>
+							</span>
+						</div>
+						<div class="blockquote">
+							<i class="fa-solid fa-quote-right"></i>
+						</div>
+					</div>
+				</div>
+				<!-- Slider row 2 -->
+				<div class="row d-flex g-5 align-items-center">
+					<div class="col-lg-4 d-none d-lg-block">
+						<img src="./images/03.jpg" class="round">
+					</div>
+					<div class="col-lg-8 box-shadow round p-4 position-relative">
+						<p>Eu&nbsp;massa, pharetra massa integer. Sed molestie sollicitudin morbi ultrices. Odio is&nbsp;euismodtelle faucibus. Venenatis nunc, tristique turpis cras sodales. In&nbsp;dui, viverra et&nbsp;ac. Id&nbsp;justo, varius nunc, faucibus erat proin elit. Amet diam, aliquet nec quis&nbsp;vel. Donec ut&nbsp;quisque in&nbsp;lorem sapien.</p>
+						<div class="d-flex align-items-center">
+							<img src="./images/zalo-lg.png" style="width: 50px; height: 50px;">
+							<span class="ms-3">
+								<h5 class="fs-16 mb-1">Zolo Tech Company</h5>
+								<p class="fs-14 m-0">Flod Miles, Head of HR Department</p>
+							</span>
+						</div>
+						<div class="blockquote">
+							<i class="fa-solid fa-quote-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+ 
+	<!-- ====== Footer ====== -->
+	<footer class="mt-50 bg-light-white overflow-hidden">
+		<div class="container">
+			<!-- Footer row 1 -->
+			<div class="row pt-50 mb-6">
+				<div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-between mt-lg-4">
+					<div class="d-flex flex-column">
+						<a href="index.html"><img src="./images/logo-dark.svg" class="img-fluid" style="width: 120px;"></a>
+						<ul class="nav flex-column my-4">
+							<li class="nav-item"><a href="mailto:example@email.com" class="nav-link"><i class="fa-solid fa-envelope"></i> example@email.com</a></li>
+							<li class="nav-item"><a href="tel:4065550120" class="nav-link"><i class="fa-solid fa-mobile-screen-button"></i> (406) 555-0120</a></li>
+						</ul>
+						<div class="footer-icon">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="#"><i class="fa-brands fa-telegram"></i></a>
+						</div>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">Quick Links</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Buy a property</a></li>
+							<li class="nav-item"><a href="property_for_sale.html" class="nav-link">Sell a property</a></li>
+							<li class="nav-item"><a href="property_for_rent.html" class="nav-link">Rent a property</a></li>
+							<li class="nav-item"><a href="single_property_v.1.html" class="nav-link">Single property</a></li>
+							<li class="nav-item"><a href="personal_info.html" class="nav-link">Personal Info</a></li>
+							<li class="nav-item"><a href="my_properties.html" class="nav-link">My Properties</a></li>
+						</ul>
+					</div>
+					<div class="d-flex flex-column mt-4 mt-sm-0">
+						<h2 class="h5">About</h2>
+						<ul class="nav flex-column mt-2">
+							<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+							<li class="nav-item"><a href="help_center.html" class="nav-link">Help & support</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-5 offset-xl-1 mt-4 mt-lg-0 footer-right-col mt-lg-4">
+					<div class="d-flex flex-column">
+						<h2 class="h5">Recent Posts</h2>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th01.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">HOME IMPROVEMENT</h5>
+								<h2 class="h6"><a href="blog.html">Your Guide to a Smart Apartment Searching</a></h2>
+								<p class="fs-14 mb-2">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Dec 4</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> 2 comments</a></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="d-flex flex-row mt-2">
+							<a href="blog.html"><img src="./images/th02.jpg" style="width: 110px;"></a>
+							<div class="p-0 ps-sm-4">
+								<h5 class="color-red fs-14 fw-400">TIPS & ADVICE</h5>
+								<h2 class="h6"><a href="blog.html">Top 10 Ways to Refresh Your Space</a></h2>
+								<p class="fs-14 mb-2">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+								<div>
+									<span><a href="blog.html" class="fs-14"><i class="fa-solid fa-calendar-day"></i> Nov 14</a></span>
+									<span><a href="blog.html" class="fs-14 ms-2"><i class="fa-solid fa-comment"></i> No comments</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 0rem -200px">
+			<!-- Footer row 2 -->
+			<div class="row text-center">
+				<p class="mt-6 mb-6">&copy; All rights reserved. Made by <span class="color-light-white fw-700">Rohit Saini</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ======= Scroll back to Top ======= -->
+	<div id="scrollUp" class="scrollActive d-flex align-items-center">
+		<span class="me-1 fs-14">Top</span>
+		<a href="#home"><i class="fa-solid fa-chevron-up color-white"></i></a>
+	</div>
+
+</main>
+
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<!-- Slick Slider JS -->
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+</body>
+</html>
