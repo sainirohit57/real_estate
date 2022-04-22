@@ -107,7 +107,7 @@ $(document).ready(function(){
 	  asNavFor: '.syncing-slider-nav'
 	});
 	$('.syncing-slider-nav').slick({
-	  slidesToShow: 5,
+	  slidesToShow: 3,
 	  slidesToScroll: 1,
 	  asNavFor: '.syncing-slider',
 	  dots: false,
@@ -116,43 +116,15 @@ $(document).ready(function(){
 	});
 });
 
-
-
-
-
-
 // ====== image-slider (About Page) ======
 $(document).ready(function(){
   $('.image-slider').slick({
-	  infinite: true,
+	  infinite: false,
 	  speed: 300,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  dots: true,
-   //  nextArrow: '.next_caro',
-  	// prevArrow: '.previous_caro',
-  	prevArrow:"<img class='' src='../images/icons/left-arrow.png'>",
-    nextArrow:"<img class='a-right control-c next slick-next' src='../images/icons/left-arrow.png'>"
-	  // responsive: [
-	  // {
-	  //     breakpoint: 992,
-	  //     settings: {
-	  //       slidesToShow: 1,
-	  //     }
-	  //   },
-	  //   {
-	  //     breakpoint: 767,
-	  //     settings: {
-	  //       slidesToShow: 1,
-	  //     }
-	  //   },
-	  //   {
-	  //     breakpoint: 575,
-	  //     settings: {
-	  //       slidesToShow: 1,
-	  //     }
-	  //   }
-	  // ]
+	  arrows: false
   });
 });
 
@@ -203,36 +175,18 @@ $(document).ready(function(){
 // ===== Real-estate-slider (Blog Page) =======
 $(document).ready(function(){
   $('.real-estate-slider').slick({
-	  infinite: true,
+	  infinite: false,
 	  speed: 300,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  dots: false,
       arrows: false,
-	  responsive: [
-	  {
-	      breakpoint: 992,
-	      settings: {
-	        slidesToShow: 3,
-	      }
-	    },
-	    {
-	      breakpoint: 767,
-	      settings: {
-	        slidesToShow: 2,
-	      }
-	    },
-	    {
-	      breakpoint: 575,
-	      settings: {
-	        slidesToShow: 1,
-	      }
-	    }
-	  ]
+	  autoplay: true,
+  		autoplaySpeed: 2000,
+	  fade: true,
+  		cssEase: 'linear'
   });
 });
-
-
 
 
 // ======= Property Categories (More Button) ======
@@ -243,27 +197,12 @@ $(document).ready(function(){
 		});
 	});
 
-
-// Filter Button (Property-for-rent Page)
-// var filterss = document.getElementById("filterShow");
-// function filtersShow() {
-// 		filterss.style.left = "0";
-// }
-
 	$(document).ready(function () {
 		// Toggle CSS Class
 		$("#filter-button").click(function(){
 				$("#filterShow").toggleClass("filter-position");
 		});
 	});
- // var navbar = document.getElementById("navLinks");
- //        function showMenu(){
- //            navbar.style.right = "0";
- //        }
- //        function hideMenu(){
- //            navbar.style.right = "-200px";
- //        }
-
 
 
  // ===== Scroll Back to Top =====
